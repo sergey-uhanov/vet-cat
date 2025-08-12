@@ -1,0 +1,34 @@
+<div class="input input_{{modifier}} {{class}} {{#if autocomplete}}input_autocomplete{{/if}}">
+  <input
+    class="input__field"
+    type="{{type}}"
+    value="{{value}}"
+    name="{{name}}"
+    placeholder="{{placeholder}}"
+    {{#if autocomplete}}autocomplete="{{autocomplete}}"
+    {{else}}autocomplete="off"
+    {{/if}}
+    {{#if id}}id="{{id}}"
+    {{/if}}
+  />
+
+  {{#if (eq modifier 'password')}}
+  <button class="input__btn" type="button">
+    {{> base/svg-manager svg-manager-class='input__btn-icon input__btn-icon-eye' svg-manager-id='eye-close'}}
+
+    {{> base/svg-manager svg-manager-class='input__btn-icon input__btn-icon-close' svg-manager-id='eye'}}
+  </button>
+  {{/if}}
+
+  {{#if (eq modifier 'search')}}
+  <button class="input__btn" type="button">
+    {{> base/svg-manager svg-manager-class='input__btn-icon input__btn-icon-search' svg-manager-id='search-icon'}}
+
+    {{> base/svg-manager svg-manager-class='input__btn-icon input__btn-icon-clear' svg-manager-id='cross-close-thin'}}
+  </button>
+  {{/if}}
+
+  {{#if errorText}}
+  <div class="error-text">{{errorText}}</div>
+  {{/if}}
+</div>

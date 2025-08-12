@@ -1,0 +1,320 @@
+.input {
+  position: relative;
+
+  .just-validate-error-label {
+    position: absolute;
+    left: 32px;
+    color: $white;
+    background-color: $danger;
+    padding: 2px 16px;
+    font-size: 8px;
+    font-size: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    top: 64px;
+    transform: translateY(-50%);
+    max-width: 80%;
+
+    @include media-breakpoint-down(md) {
+      top: 48px;
+    }
+  }
+
+  .just-validate-error-field {
+    border: 1px solid $danger;
+  }
+
+  &__field {
+    width: 100%;
+    padding: 22px 32px;
+    border: 1px solid $grey;
+    color: $black;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+
+    &:-webkit-autofill {
+      transition: background-color 999999s ease-in-out 0s;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    &::placeholder {
+      color: $light-gray;
+    }
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__error {
+    position: absolute;
+    max-width: calc(100% - 70px);
+    top: 8px;
+    left: 33px;
+    color: $danger;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include media-breakpoint-down(sm) {
+      left: 17px;
+      top: 4px;
+      max-width: calc(100% - 40px);
+    }
+  }
+
+  &_password {
+    .input {
+      &__field {
+        padding-right: 40px;
+
+        @include media-breakpoint-down(sm) {
+          padding-right: 30px;
+        }
+      }
+
+      &__btn {
+        @media (hover: hover) {
+          &:hover {
+            .input__btn-icon {
+              transform: scale(1.1);
+            }
+          }
+
+          &:active {
+            .input__btn-icon {
+              transform: scale(1.05);
+            }
+          }
+        }
+
+        &:active {
+          .input__btn-icon {
+            transform: scale(0.9);
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          right: 3px;
+        }
+
+        &-icon {
+          width: 18px;
+          height: 14px;
+          stroke: $danger;
+
+          @include media-breakpoint-down(sm) {
+            width: 16px;
+            height: 12px;
+          }
+
+          &-close {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-hide {
+      .input {
+        &__field {
+          color: $black;
+        }
+
+        &__display {
+          display: none;
+        }
+
+        &__btn {
+          &-icon {
+            &-eye {
+              display: none;
+            }
+
+            &-close {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_search {
+    .input {
+      &__field {
+        border: unset;
+        border-radius: 10px;
+        padding: 11px 60px 11px 32px;
+        box-shadow: $box-shadow-input;
+
+        @include media-breakpoint-down(sm) {
+          padding: 9px 60px 9px 16px;
+        }
+
+        &::placeholder {
+          font-size: 10px;
+        }
+      }
+
+      &__btn {
+        cursor: unset;
+
+        @include media-breakpoint-down(sm) {
+          right: 5px;
+        }
+
+        &-icon {
+          fill: $danger;
+
+          &-search {
+            width: 24px;
+            height: 24px;
+
+            @include media-breakpoint-down(sm) {
+              width: 17px;
+              height: 17px;
+            }
+          }
+
+          &-clear {
+            display: none;
+            width: 18px;
+            height: 18px;
+
+            @include media-breakpoint-down(sm) {
+              width: 14px;
+              height: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    &-delete {
+      .input {
+        &__btn {
+          cursor: pointer;
+
+          @media (hover: hover) {
+            &:hover {
+              .input__btn-icon {
+                transform: scale(1.1);
+              }
+            }
+
+            &:active {
+              .input__btn-icon {
+                transform: scale(1.05);
+              }
+            }
+          }
+
+          &:active {
+            .input__btn-icon {
+              transform: scale(0.9);
+            }
+          }
+
+          &-icon {
+            &-search {
+              display: none;
+            }
+
+            &-clear {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_contacts {
+    .input {
+      &__field {
+        border-radius: 10px;
+        padding: 17px 32px;
+        border-color: $white;
+        background-color: transparent;
+        color: $white;
+        font-size: 14px;
+
+        &:-webkit-autofill {
+          color: $white;
+          -webkit-text-fill-color:$white;
+        }
+
+        @include media-breakpoint-down(md) {
+          padding: 14px 16px;
+          border-radius: 10px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          padding: 16px;
+        }
+
+        &::placeholder {
+          color: $white;
+        }
+      }
+    }
+
+    .just-validate-error-label {
+      font-size: 10px;
+      left: 17px;
+      bottom: unset;
+      top: 9px;
+      background-color: transparent;
+
+      @include media-breakpoint-down(md) {
+        left: 0px;
+        top: 9px;
+      }
+    }
+
+    .just-validate-error-field {
+      border: 1px solid $white;
+    }
+  }
+
+  &_disabled {
+    cursor: not-allowed;
+    user-select: none;
+
+    .input {
+      &__field {
+        pointer-events: none;
+        border-color: $light-gray;
+      }
+    }
+  }
+
+  &_autocomplete {
+    .input {
+      &__field {
+        &:-webkit-autofill {
+          transition: unset;
+        }
+      }
+    }
+  }
+}

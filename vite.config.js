@@ -24,6 +24,7 @@ pages.forEach(page => {
 })
 
 export default defineConfig({
+  // base: '/vet-cat/',
   preview: {
     port: 8000,
     strictPort: true,

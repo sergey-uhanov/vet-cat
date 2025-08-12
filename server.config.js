@@ -3,4 +3,7 @@ export default {
   strictPort: true,
   host: true,
   open: false,
+  watch: {
+    ignored: /(^|[\/\\])\../,
+  }
 }
