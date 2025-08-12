@@ -1,0 +1,50 @@
+$fontsFamily: (
+  montserrat: 'Montserrat',
+);
+
+$fontsFamilyTrimmed: 'Montserrat-Trimmed';
+
+@mixin fontStyle($fontSize, $lineHeight: null, $fontWeight: null) {
+  font-size: $fontSize + px;
+
+  @if $lineHeight != null {
+    line-height: calc($lineHeight / $fontSize);
+  }
+
+  @if $fontWeight != null {
+    font-weight: $fontWeight;
+  }
+}
+
+@mixin multiLineTruncate($max-lines) {
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $max-lines;
+  line-clamp: $max-lines;
+}
+
+@mixin singleLineTruncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin fontFamily($fontFamily) {
+  @if map-has-key($fontsFamily, $fontFamily) {
+    $fontFamily-value: map-get($fontsFamily, $fontFamily);
+    font-family: $fontFamily-value, sans-serif;
+  } @else {
+    @warn 'Invalid font family: #{$fontFamily}.';
+  }
+}
+
+@mixin text-gradient($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
