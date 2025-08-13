@@ -8,6 +8,96 @@
         </a>
     </div>
     <div class="header__search">
-        {{> ui/input class="header__search-input" }}
+        {{> ui/input class="header__search-input" placeholder="Поиск по сайту" name="search-input"}}
+        {{> base/svg-manager svg-manager-id="search" svg-manager-class="header__search-icon"}}
+
     </div>
+    <div class="header__address-block">
+        <div class="header__address">
+            <span>Одесса, Чкалова д. 57/5</span>
+            Приморский район
+        </div>
+        <div class="header__address">
+            <span>Одесса, Заболотного д.21/1</span>
+            Суворовский район
+        </div>
+    </div>
+    <div class="header__contacts">
+        <span class="header__number-phone">
+            +38 (097) 110-23-03
+        </span>
+        <button class="header__call-back ">Заказать звонок</button>
+    </div>
+
+    <aside class="sidebar">
+        <ul class="sidebar__list">
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="/pages/.html">Наши услуги</a>
+            </li>
+
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="/pages/.html">Стоимость</a>
+            </li>
+
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="/pages/.html">Сотрудники</a>
+            </li>
+
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="/pages/.html">График работы</a>
+            </li>
+
+            <li class="sidebar__item  sidebar-sub-list">
+                <div class="sidebar-sub-list__title">О клинике <span class="sidebar-sub-list__icon"></span></div>
+                <ul class=" sidebar-sub-list__list">
+                    <li class="sidebar-sub-list__item">
+                        <a class="sidebar-sub-list__link" href="/pages/.html">Наша миссия</a>
+                    </li>
+
+                    <li class="sidebar-sub-list__item">
+                        <a class="sidebar-sub-list__link" href="/pages/.html">Фотогалерея</a>
+                    </li>
+
+                    <li class="sidebar-sub-list__item">
+                        <a class="sidebar-sub-list__link" href="/pages/.html">Отзывы</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item sidebar__sub-list  sidebar-sub-list">
+                <div class="sidebar-sub-list__title">Полезное <span class="sidebar-sub-list__icon"></span></div>
+                <ul class=" sidebar-sub-list__list">
+                    <li class="sidebar-sub-list__item">
+                        <a class="sidebar-sub-list__link" href="/pages/.html">Наша миссия</a>
+                    </li>
+
+                    <li class="sidebar-sub-list__item">
+                        <a class="sidebar-sub-list__link" href="/pages/.html">Фотогалерея</a>
+                    </li>
+
+                    <li class="sidebar-sub-list__item">
+                        <a class="sidebar-sub-list__link" href="/pages/.html">Отзывы</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="/pages/.html">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="sidebar__inform-block">
+            <div class="sidebar__inform-title">
+                Работаем для вас
+            </div>
+            <span class="sidebar__inform-subtitle">ежедневно и круглосуточно</span>
+
+            {{> ui/button
+            type="button"
+            button-class="sidebar__inform-button "
+            button-modifier="fill-color"
+            button-text=" Записаться на прием"
+            }}
+        </div>
+    </aside>
 </header>

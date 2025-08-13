@@ -12,13 +12,16 @@
     <title>Home page</title>
 </head>
 <body>
+<div class="wrapper">
+    {{> base/header}}
+    <main class="main ">
 
-{{> base/header}}
+        {{> pages/home/first-screen }}
+    </main>
+    {{> base/footer}}
 
-<h1>fbffb;bjl;kj;</h1>
-{{> base/svg-manager svg-manager-id="logo"}}
-
-{{> base/footer}}
+    {{> sprite/base-sprite}}
+</div>
 <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,158 @@
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 299px;
+  min-height: calc(100vh - 20px);
+  padding: 51px 0;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $light-gray;
+  background: $white;
+
+  &__list {
+    flex: 1;
+    padding: 0 56px;
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $font-color;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__link {
+    font-size: 20px;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &__inform-block {
+    padding: 52px 41px 52px 41px;
+    border-top: 1px solid $light-gray;
+
+  }
+
+  &__inform-title{
+    font-weight: $--700;
+    font-size: 20px;
+    line-height: 0.8;
+    margin-left: 16px;
+  }
+
+  &__inform-subtitle{
+    display: block;
+    opacity: 0.7;
+    font-weight: $--400;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 27px;
+    margin-left: 16px;
+  }
+
+  &__inform-button{
+    margin-bottom: 26px;
+  }
+}
+
+.sidebar-sub-list {
+
+  &__list {
+    transform: scaleY(0);
+    transform-origin: top;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, transform 0.3s;
+
+  }
+
+  &__title {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      background: $font-color;
+      display: block;
+      right: -23px;
+      top: 50%;
+      transform: rotate(-45deg);
+      transition: transform 0.3s, width 0.3s;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &:first-child {
+      margin-top: 19px;
+    }
+  }
+
+  &__icon {
+    width: 10px;
+    height: 1px;
+    background: $font-color;
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: rotate(45deg);
+    transition: transform 0.3s, width 0.3s;
+
+  }
+
+  &__link {
+    font-size: 16px;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+
+  &_active {
+    .sidebar-sub-list__list {
+      transform: scaleY(1);
+      max-height: 300px;
+    }
+
+    .sidebar-sub-list__title {
+      color: $green;
+
+      &:before {
+        background: $green;
+        transform: rotate(0deg);
+        width: 7px;
+        height: 2px;
+      }
+    }
+
+    .sidebar-sub-list__icon {
+      background: $green;
+      transform: rotate(0deg);
+      width: 7px;
+      height: 2px;
+    }
+  }
+}
+
