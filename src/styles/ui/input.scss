@@ -35,9 +35,13 @@
       transition: background-color 999999s ease-in-out 0s;
     }
 
+    @include media-breakpoint-down-equal(l) {
+      padding: 20px 35px 20px 50px;
+    }
+
     @include media-breakpoint-down(md) {
       font-size: 12px;
-      padding: 35px 35px 35px 80px;
+
     }
 
     &::placeholder {

@@ -1,0 +1,37 @@
+.triple-slider {
+  position: relative;
+  padding: 0 34px;
+
+  &.swiper {
+    margin-left: 34px;
+    margin-right: 34px;
+    max-width: 1108px;
+  }
+
+  &__button-prev {
+    position: absolute;
+    left: 8px;
+    top: 44%;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__button-prev-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__button-next {
+    position: absolute;
+    right: 8px;
+    top: 44%;
+    width: 32px;
+    height: 32px;
+    transform: rotate(180deg);
+  }
+
+  &__button-next-icon {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,14 +1,165 @@
-.first-screen{
+.first-screen {
   position: relative;
+  padding-top: 113px;
 
+  @include media-breakpoint-down(l) {
+    padding-top: calc(
+            20px + (113 - 20) * ((100vw - 375px) / (1920 - 375))
+    );
+  }
 
-  &__background{
+  &__background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background: $logo-bg;
+    aspect-ratio: 2.92/1;
+    background-image: url('/img/home/puppy.webp'), $logo-bg;
+    background-position: right center, center;
+    background-size: contain, auto;
+    background-repeat: no-repeat, repeat;
     z-index: -1;
+
+    @include media-breakpoint-down-equal(l) {
+      aspect-ratio: 2.475/1;
+    }
+
+    @include media-breakpoint-down(l) {
+      background-size: cover, auto;
+    }
+
+    @include media-breakpoint-down-equal(lg) {
+      aspect-ratio: 2/1;
+    }
+    
+    @include media-breakpoint-down(sm) {
+      aspect-ratio: 2/1;
+    }
+
+    @include media-breakpoint-down-equal(xs) {
+      aspect-ratio: 1.7/1;
+    }
+
+    @include media-breakpoint-down-equal(xxs) {
+      aspect-ratio: 1.3/1;
+    }
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+
+      @include media-breakpoint-down(l) {
+        background: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+
+  &__title {
+    max-width: 712px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1875;
+    margin-bottom: 33px;
+    position: relative;
+    z-index: 10;
+
+    @include media-breakpoint-down(l) {
+      font-size: calc(
+              20px + (64 - 20) * ((100vw - 375px) / (1920 - 375))
+      );
+
+      margin-bottom: calc(
+              20px + (33 - 20) * ((100vw - 375px) / (1920 - 375))
+      );
+    }
+
+
+    @include media-breakpoint-down-equal(md) {
+      color: $black;
+    }
+
+    @include media-breakpoint-down-equal(sm) {
+      max-width: 400px;
+    }
+  }
+
+  &__list {
+    padding-left: 20px;
+    position: relative;
+    z-index: 10;
+
+    @include media-breakpoint-down-equal(md) {
+      max-width: 350px;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.8;
+    position: relative;
+
+    @include media-breakpoint-down(l) {
+      font-size: calc(
+              14px + (20 - 14) * ((100vw - 375px) / (1920 - 375))
+      );
+    }
+
+    @include media-breakpoint-down-equal(lg) {
+      line-height: 1.3;
+    }
+    @include media-breakpoint-down-equal(md) {
+      font-size: 16px;
+      color: $black;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: $green;
+      position: absolute;
+      left: -16px;
+      top: 15px;
+
+
+      @include media-breakpoint-down(l) {
+        top: 10px;
+      }
+      @include media-breakpoint-down-equal(md) {
+        top: 8px;
+      }
+    }
+  }
+
+  &__long-row {
+    position: absolute;
+    bottom: -40px;
+    left: 550px;
+    height: 93px;
+    width: 14px;
+
+    @include media-breakpoint-down-equal(l) {
+      left: 255px;
+      bottom: -44px;
+    }
+
+    @include media-breakpoint-down(l) {
+      height: calc(
+              50px + (93 - 50) * ((100vw - 375px) / (1920 - 375))
+      );
+      bottom: -20px;
+    }
+
+    @include media-breakpoint-down-equal(sm) {
+      left: 5px;
+    }
   }
 }

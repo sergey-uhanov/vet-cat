@@ -24,7 +24,7 @@ pages.forEach(page => {
 })
 
 export default defineConfig({
-  // base: '/vet-cat/',
+  base: process.env.NODE_ENV === 'production' ? '/vet-cat/' : '/',
   preview: {
     port: 8000,
     strictPort: true,

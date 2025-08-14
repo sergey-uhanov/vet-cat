@@ -4,8 +4,43 @@
 @import '@/styles/base/sidebar';
 @import '@/styles/ui/button';
 @import '@/styles/pages/home/first-screen';
+@import '@/styles/pages/home/popular-services';
+@import '@/styles/modules/swiper.css';
+@import '@/styles/widgets/triple-sleder';
+
+.container-slider {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  left: 125px;
+
+  @include media-breakpoint-down-equal(l) {
+    left: 0;
+  }
+}
+
+.simple-card {
+  padding: 28px 32px;
+  width: 100%;
+  max-width: 344px;
+  height: 240px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e8fafa 0%, #dcf2e8 100%);
+  min-height: 240px;
 
 
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
 
-
-
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    @include multiLineTruncate(6);
+  }
+}

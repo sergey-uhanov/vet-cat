@@ -1,3 +1,5 @@
+@import "@/styles/base/burger-icon";
+
 .header {
   display: flex;
   align-items: center;
@@ -7,6 +9,8 @@
   width: 100vw;
   height: 96px;
   border-bottom: 1px solid $light-gray;
+  z-index: 9999;
+background: $white;
 
   @include media-breakpoint-down-equal(l) {
     max-height: 75px;
@@ -17,7 +21,7 @@
   }
 
   &__logo-wrapper {
-    width: 300px;
+    width: 299px;
     height: 100%;
     display: flex;
     padding-top: 16px;
@@ -30,8 +34,14 @@
       height: 75px;
     }
 
+    @include media-breakpoint-down-equal(xs) {
+      padding-left: 25px;
+      width: 150px;
+    }
+
     @include media-breakpoint-down-equal(xxs) {
-      width: 168px;
+      padding-left: 18px;
+      width: 136px;
     }
 
     img {
@@ -44,6 +54,20 @@
       @include media-breakpoint-down-equal(sm) {
         width: 100px;
       }
+    }
+  }
+
+  &__burger {
+    display: none;
+    margin-left: 30px;
+
+    @include media-breakpoint-down-equal(l) {
+      display: block;
+    }
+
+    @include media-breakpoint-down-equal(xs) {
+      flex: 1;
+      margin-left: 15px;
     }
   }
 
@@ -63,9 +87,13 @@
     width: 30px;
     height: 30px;
 
+    @include media-breakpoint-down-equal(l) {
+      top: 14px;
+      left: 21px;
+    }
+
     @include media-breakpoint-down-equal(sm) {
       width: 20px;
-      top: 29px;
     }
   }
 
@@ -108,7 +136,10 @@
 
     @include media-breakpoint-down-equal(lg) {
       padding: 18px 20px;
+    }
 
+    @include media-breakpoint-down-equal(l) {
+      padding: 13px 20px;
     }
   }
 

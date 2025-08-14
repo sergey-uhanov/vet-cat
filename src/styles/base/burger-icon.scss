@@ -1,0 +1,115 @@
+.burger-icon {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 24px;
+  max-width: 40px;
+  min-width: 40px;
+  flex: 1;
+
+  @include media-breakpoint-down-equal(md) {
+    max-width: 33px;
+    min-width: 33px;
+    height: 20px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    max-width: 18px;
+    min-width: 18px;
+    height: 11px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: $black;
+
+    @include media-breakpoint-down-equal(md) {
+      height: 2px;
+      width: 33px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      height: 1.3px;
+      width: 18px;
+    }
+  }
+
+  &::before {
+    top: 0;
+    box-shadow: 0 10px 0 $black;
+    transition:
+            box-shadow 0.3s 0.15s,
+            top 0.3s 0.15s,
+            transform 0.3s;
+
+    @include media-breakpoint-down-equal(md) {
+      box-shadow: 0 9px 0 $black;
+    }
+
+    @include media-breakpoint-down(xs) {
+      box-shadow: 0 5px 0 $black;
+    }
+  }
+
+  &::after {
+    bottom: 0;
+    transition:
+            bottom 0.3s 0.15s,
+            transform 0.3s;
+
+    @include media-breakpoint-down-equal(md) {
+      height: 2px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      height: 1px;
+    }
+  }
+
+  &_open {
+    &::before {
+      top: 10px;
+      transform: rotate(45deg);
+      box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+      transition:
+              box-shadow 0.15s,
+              top 0.3s,
+              transform 0.3s 0.15s;
+
+      @include media-breakpoint-down-equal(md) {
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0);
+        top: 10px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0);
+        top: 5px;
+      }
+    }
+
+    &::after {
+      bottom: 10px;
+      transform: rotate(-45deg);
+      transition:
+              bottom 0.3s,
+              transform 0.3s 0.15s;
+
+      @include media-breakpoint-down-equal(md) {
+        bottom: 8px;
+      }
+      @include media-breakpoint-down(xs) {
+        bottom: 5px;
+      }
+    }
+  }
+}

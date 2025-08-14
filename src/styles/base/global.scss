@@ -11,12 +11,16 @@ img {
 }
 
 .container {
-  max-width: 1730px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 310px;
+  padding: 0 254px 0 554px;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down-equal(l) {
+    padding: 0 254px;
+  }
+
+  @include media-breakpoint-down-equal(lg) {
     padding: 0 15px;
   }
 
@@ -30,6 +34,10 @@ img {
   flex-direction: column;
   min-height: 100vh;
   margin-top: 95px;
+
+  @include media-breakpoint-down-equal(l) {
+    margin-top: 75px;
+  }
 }
 
 .main-wrapper {
@@ -43,5 +51,5 @@ img {
 }
 
 body {
- color: $grey;
+  color: $grey;
 }

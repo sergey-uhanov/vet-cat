@@ -10,6 +10,19 @@
   flex-direction: column;
   border-right: 1px solid $light-gray;
   background: $white;
+  overflow: auto;
+  transition: transform 0.3s;
+  z-index: 9999;
+
+@include media-breakpoint-down-equal(l) {
+  transform: translateX(-100%);
+}
+
+  &_open{
+    @include media-breakpoint-down-equal(l) {
+      transform: translateX(0);
+    }
+  }
 
   &__list {
     flex: 1;
