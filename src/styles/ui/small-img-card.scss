@@ -1,6 +1,13 @@
 .small-img-card {
   max-width: 248px;
 
+
+  @media (hover: hover) {
+    &:hover{
+      color: $green
+    }
+  }
+
   &__img-wrapper {
     margin-bottom: 16px;
     aspect-ratio: 1/1;
@@ -11,11 +18,13 @@
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 12px;
+    transition: color 0.3s;
   }
 
   &__date {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.42;
+    transition: color 0.3s;
   }
 }

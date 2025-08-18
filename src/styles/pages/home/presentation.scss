@@ -24,7 +24,8 @@
     font-weight: $--700;
     font-size: 48px;
     line-height: 1.16;
-    margin-left: 80px;
+    margin-left: 134px;
+
 
     @include media-breakpoint-down-equal(sm) {
       font-size: 36px;
@@ -175,7 +176,7 @@
   &__quoter-circle {
     fill: transparent;
     position: absolute;
-    top: -17px;
+    top: -32px;
     right: 78px;
     width: 366px;
     height: 79px;
