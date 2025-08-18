@@ -1,4 +1,5 @@
 @import "@/styles/base/burger-icon";
+@import "@/styles/ui/dark-background";
 
 .header {
   display: flex;
@@ -10,7 +11,7 @@
   height: 96px;
   border-bottom: 1px solid $light-gray;
   z-index: 9999;
-background: $white;
+  background: $white;
 
   @include media-breakpoint-down-equal(l) {
     max-height: 75px;
@@ -75,9 +76,59 @@ background: $white;
     flex: 1;
     position: relative;
 
-    @include media-breakpoint-down-equal(xs) {
-      display: none;
+
+    @include media-breakpoint-down-equal(sm) {
+      position: absolute;
+      top: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90vw;
+      border: 1px solid $black;
+      opacity: 0;
+      pointer-events: none;
+      z-index: -999;
+      transition: opacity 0.3s;
     }
+
+    &_open {
+      @include media-breakpoint-down-equal(sm) {
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 99999;
+      }
+    }
+  }
+
+
+  &__search-close {
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    stroke: black;
+
+    @include media-breakpoint-down-equal(sm) {
+      opacity: 1;
+    }
+  }
+
+  &__search-icon-wrapper {
+    flex: 1;
+    display: none;
+
+    @include media-breakpoint-down-equal(sm) {
+      display: flex;
+      justify-content: end;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+  }
+
+  &__icon-search-icon {
+    width: 32px;
+    height: 32px;
   }
 
   &__search-icon {
@@ -135,7 +186,7 @@ background: $white;
     padding: 24px 39px;
 
     @include media-breakpoint-down-equal(lg) {
-      padding: 18px 20px;
+      padding: 17px 20px;
     }
 
     @include media-breakpoint-down-equal(l) {

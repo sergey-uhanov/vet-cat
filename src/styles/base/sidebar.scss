@@ -1,9 +1,8 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 100%;
   width: 299px;
-  min-height: calc(100vh - 20px);
+  height: calc(100vh - 20px);
   padding: 51px 0;
   user-select: none;
   display: flex;
@@ -14,11 +13,11 @@
   transition: transform 0.3s;
   z-index: 9999;
 
-@include media-breakpoint-down-equal(l) {
-  transform: translateX(-100%);
-}
+  @include media-breakpoint-down-equal(l) {
+    transform: translateX(-100%);
+  }
 
-  &_open{
+  &_open {
     @include media-breakpoint-down-equal(l) {
       transform: translateX(0);
     }
@@ -26,7 +25,7 @@
 
   &__list {
     flex: 1;
-    padding: 0 56px;
+    padding: 0 56px 15px 56px;
   }
 
   &__item {
@@ -56,14 +55,14 @@
 
   }
 
-  &__inform-title{
+  &__inform-title {
     font-weight: $--700;
     font-size: 20px;
     line-height: 0.8;
     margin-left: 16px;
   }
 
-  &__inform-subtitle{
+  &__inform-subtitle {
     display: block;
     opacity: 0.7;
     font-weight: $--400;
@@ -73,8 +72,9 @@
     margin-left: 16px;
   }
 
-  &__inform-button{
+  &__inform-button {
     margin-bottom: 26px;
+    background: $danger;
   }
 }
 

@@ -1,3 +1,12 @@
+%button-fill-base {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: $white;
+  border-radius: 16px;
+}
+
 .button {
   overflow: hidden;
   cursor: pointer;
@@ -8,7 +17,6 @@
   user-select: none;
   line-height: 1.2;
   width: 100%;
-  border-radius: 10px;
   transition: background 0.3s,
   color 0.3s,
   border-color 0.3s;
@@ -23,16 +31,26 @@
     height: 100%;
   }
 
-  &_fill-color {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: $white;
-    border-radius: 16px;
-    padding: 11px 0;
-    max-width: 218px;
+  &_fill-color-red {
+    @extend %button-fill-base;
     background: $danger;
+    max-width: 218px;
+    padding: 11px 0;
+    border-radius: 10px;
+
+    @media (hover: hover) {
+      &:hover {
+        background: #f72056;
+      }
+    }
+  }
+
+  &_fill-color-green {
+    @extend %button-fill-base;
+    background: $light-green;
+    max-width: 233px;
+    padding: 14px 0;
+    border-radius: 16px;
 
     @media (hover: hover) {
       &:hover {
@@ -40,7 +58,6 @@
       }
     }
   }
-
 
   &_disabled {
     background: $light-gray;

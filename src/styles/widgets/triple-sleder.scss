@@ -11,27 +11,49 @@
   &__button-prev {
     position: absolute;
     left: 8px;
-    top: 44%;
+    top: 46.5%;
     width: 32px;
     height: 32px;
+    cursor: pointer;
+
+    svg {
+      @media (hover: hover) {
+        &:hover {
+          stroke: #1DC4B0;
+          fill: #1dc3b0;
+        }
+      }
+    }
   }
 
   &__button-prev-icon {
     width: 32px;
     height: 32px;
+    transition: fill 0.3s, stroke 0.3s;
   }
 
   &__button-next {
     position: absolute;
     right: 8px;
-    top: 44%;
+    top: 46.5%;
     width: 32px;
     height: 32px;
     transform: rotate(180deg);
+    cursor: pointer;
+
+    svg {
+      @media (hover: hover) {
+        &:hover {
+          stroke: #1DC4B0;
+          fill: #1dc3b0;
+        }
+      }
+    }
   }
 
   &__button-next-icon {
     width: 32px;
     height: 32px;
+    transition: fill 0.3s, stroke 0.3s;
   }
 }

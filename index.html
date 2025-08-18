@@ -12,14 +12,23 @@
     <title>Home page</title>
 </head>
 <body>
+{{> ui/dark-back}}
+
 <div class="wrapper">
     {{> base/header}}
+    {{> base/sidebar}}
+
     <main class="main ">
 
         {{> pages/home/first-screen }}
 
         {{> pages/home/popular-services }}
 
+        {{> pages/home/presentation }}
+
+        {{> pages/home/experts }}
+
+        {{> pages/home/stories }}
     </main>
     {{> base/footer}}
 

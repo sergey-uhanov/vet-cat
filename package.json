@@ -35,6 +35,8 @@
     "air-datepicker": "^3.5.3",
     "autoprefixer": "^10.4.19",
     "dotenv": "^16.4.7",
+    "firebase": "^12.1.0",
+    "firebase-admin": "^13.4.0",
     "just-validate": "^4.3.0",
     "postcss-preset-env": "^9.5.15",
     "swiper": "^11.1.15",
