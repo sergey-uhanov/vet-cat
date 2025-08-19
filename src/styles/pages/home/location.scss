@@ -1,0 +1,129 @@
+%number {
+  display: block;
+  position: absolute;
+  color: $white;
+  bottom: -6px;
+  right: 21px;
+  font-size: 73px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.location {
+  padding-top: 138px;
+  padding-bottom: 128px;
+
+  @include media-breakpoint-down-equal(lg) {
+    padding-top: calc(
+            28px + (54 - 28) * ((100vw - 375px) / (1620 - 375))
+    );
+
+    padding-bottom: calc(
+            28px + (54 - 28) * ((100vw - 375px) / (1620 - 375))
+    );
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.16;
+    margin-bottom: 54px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: calc(
+              28px + (48 - 28) * ((100vw - 375px) / (1620 - 375))
+      );
+    }
+  }
+
+  &__map {
+    max-width: 728px;
+    aspect-ratio: 1.358/1;
+
+    @include media-breakpoint-down-equal(md) {
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns:minmax(400px, 728px) minmax(320px, 344px);
+    column-gap: 40px;
+
+    @include media-breakpoint-down-equal(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__phone-block {
+    margin-top: 10px;
+    margin-bottom: 29px;
+
+    span {
+      display: block;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.64;
+      margin-top: 2px;
+    }
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.166;
+  }
+
+  &__place-block {
+    padding: 19px 24px 27px 24px;
+    background: $logo-bg;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    span {
+      display: block;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.41;
+    }
+
+    &_first:after {
+      content: "1";
+      @extend %number
+    }
+
+    &_second:after {
+      content: "2";
+      @extend %number
+    }
+  }
+
+  &__place-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    border-radius: 16px;
+    background: $light-green;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 48px;
+    max-width: 229px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+  }
+}

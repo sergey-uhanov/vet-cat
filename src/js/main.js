@@ -5,6 +5,7 @@ import {innerServiceCard} from "@/js/partials/home/inner-service-card.js";
 import {expertsSliderInner} from "@/js/partials/home/experts-slider-inner.js";
 import {quadrupleSlider} from "@/js/widgets/quadruple-sleder.js";
 import {storiesSliderInner} from "@/js/partials/home/inner-stories-cards.js";
+import {initMap} from "@/js/partials/home/init-map.js";
 
 
 
@@ -17,4 +18,5 @@ document.addEventListener('DOMContentLoaded', async e => {
     await innerServiceCard()
     await expertsSliderInner()
     await storiesSliderInner()
+    initMap()
 })
