@@ -7,19 +7,5 @@
             <a class="experts__link" href="#">График работы врачей</a>
         </div>
     </div>
-    <div class="container-slider">
-        <div class="expert-slider triple-slider triple-slider_experts swiper">
-            <div class=" triple-slider__wrapper swiper-wrapper">
-            </div>
-        </div>
-
-        <div class="triple-slider__button-prev">
-            {{> base/svg-manager svg-manager-id="row" svg-manager-class="triple-slider__button-prev-icon triple-slider__button-prev-icon_experts"}}
-
-        </div>
-
-        <div class="triple-slider__button-next">
-            {{> base/svg-manager svg-manager-id="row" svg-manager-class="triple-slider__button-next-icon triple-slider__button-next-icon_experts"}}
-        </div>
-    </div>
+    {{> widgets/expert-slider}}
 </section>

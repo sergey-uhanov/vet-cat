@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/src/styles/service.scss"/>
-    <title>Услуга</title>
+    <title></title>
 </head>
 <body>
 {{> ui/dark-back}}
@@ -20,10 +20,13 @@
 
     <main class="main">
         <div class="container">
-            {{> ui/breadcrumbs itemText1="Наши услуги" itemUrl1="/pages/all-services" itemText2="1" itemUrl2="#"}}
+            {{> ui/breadcrumbs itemText1="Наши услуги" itemUrl1="/pages/all-services" itemText2=" " itemUrl2="#"}}
 
             {{> pages/service/story }}
+
+            {{> pages/service/price }}
         </div>
+        {{> pages/service/service-slider}}
     </main>
 
     {{> base/footer}}
