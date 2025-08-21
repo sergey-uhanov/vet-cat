@@ -6,7 +6,7 @@ import{g as _e,a as rt,c as at,d as nt}from"./firebase--kS5HU57.js";function We(
                     <div class="img-card__img-wrapper">
                         <picture>
                             <source srcset="/img/home/${s.imgLinkWebp}" type="image/webp">
-                            <img class="img-card__img" src="/img/home/${s.imgLinkPng}" width="344" height="400"
+                            <img class="img-card__img" src="/vet-cat/img/home/${s.imgLinkPng}" width="344" height="400"
                                  alt="expert photo" loading="lazy">
                         </picture>
                         <div class="img-card__hover-information">
