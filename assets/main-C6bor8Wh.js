@@ -11,7 +11,7 @@ import{g as s,a as m,c as g,d as w,i as _}from"./firebase--kS5HU57.js";import{S 
                             </div>`;r.insertAdjacentHTML("beforeend",a)})}async function S(){try{const e=await y();b(e)}catch(e){console.error(e)}}function k(e,t,r){new u(`.${e}`,{slidesPerView:4,spaceBetween:40,loop:!0,navigation:{nextEl:`.${t}`,prevEl:`.${r}`},breakpoints:{320:{slidesPerView:"auto",spaceBetween:20},1100:{slidesPerView:4,spaceBetween:40}}})}function L(e){return` <a class="swiper-slide small-img-card" href="#">
                     <div class="small-img-card__img-wrapper">
                         <picture>
-                            <source srcset="/img/home/${e.linkWebp}" type="image/webp">
+                            <source srcset="/vet-cat/img/home/${e.linkWebp}" type="image/webp">
                             <img class="small-img-card__img" src="/img/home/${e.linkPng}" alt="photo animals"
                                  width="248" height="248">
                         </picture>
