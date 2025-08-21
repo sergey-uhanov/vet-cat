@@ -5,7 +5,7 @@ import{g as _e,a as rt,c as at,d as nt}from"./firebase--kS5HU57.js";function We(
       `;if(u.slideShadows){let x=g.querySelector(".swiper-slide-shadow");x||(x=le("cards",g)),x&&(x.style.opacity=Math.min(Math.max((Math.abs(w)-.5)/.5,0),1))}g.style.zIndex=-Math.abs(Math.round(h))+f.length;const E=he(u,g);E.style.transform=C}},setTransition:f=>{const c=e.slides.map(n=>ae(n));c.forEach(n=>{n.style.transitionDuration=`${f}ms`,n.querySelectorAll(".swiper-slide-shadow").forEach(u=>{u.style.transitionDuration=`${f}ms`})}),xe({swiper:e,duration:f,transformElements:c})},perspective:()=>!0,overwriteParams:()=>({watchSlidesProgress:!0,virtualTranslate:!e.params.cssMode})})}const Qs=[Ts,Ms,Cs,Ps,Ls,Is,zs,As,$s,Ds,Os,ks,Gs,Hs,Bs,Rs,_s,Ws,qs,js,Us,Ks,Zs];j.use(Qs);function ti(s,e,t){new j(`.${s}`,{slidesPerView:3,spaceBetween:40,loop:!0,navigation:{nextEl:`.${e}`,prevEl:`.${t}`},breakpoints:{320:{slidesPerView:"auto",spaceBetween:10},576:{slidesPerView:2,spaceBetween:20},769:{slidesPerView:3,spaceBetween:40}}})}function Js(s){return` <a class="swiper-slide img-card" href="#">
                     <div class="img-card__img-wrapper">
                         <picture>
-                            <source srcset="/img/home/${s.imgLinkWebp}" type="image/webp">
+                            <source srcset="/vet-cat/img/home/${s.imgLinkWebp}" type="image/webp">
                             <img class="img-card__img" src="/vet-cat/img/home/${s.imgLinkPng}" width="344" height="400"
                                  alt="expert photo" loading="lazy">
                         </picture>
