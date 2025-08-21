@@ -1,0 +1,25 @@
+@import '@/styles/base/global';
+@import '@/styles/ui/button';
+@import '@/styles/ui/breadcrumbs';
+@import '@/styles/pages/all-services/banner';
+@import '@/styles/pages/all-services/list-services';
+
+body{
+background: $logo-bg;
+}
+
+.main-title{
+  font-weight: $--700;
+  font-size: 48px;
+  line-height: 1.16;
+  margin-bottom: 46px;
+
+  @include media-breakpoint-down-equal(sm) {
+    margin-bottom: 25px;
+    font-size: 32px;
+  }
+
+  @include media-breakpoint-down-equal(xs) {
+    font-size: 28px;
+  }
+}

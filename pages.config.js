@@ -9,6 +9,14 @@ const pages = [
     name: 'contacts',
     path: resolve(__dirname, './pages/contacts.html'),
   },
+  {
+    name: 'all-services',
+    path: resolve(__dirname, './pages/all-services.html'),
+  },
+  {
+    name: 'service',
+    path: resolve(__dirname, './pages/service.html'),
+  },
 
 ]
 

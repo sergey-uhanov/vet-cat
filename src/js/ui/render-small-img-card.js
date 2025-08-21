@@ -1,6 +1,6 @@
 export function renderSmallImgCard(data) {
 
-    return ` <div class="swiper-slide small-img-card">
+    return ` <a class="swiper-slide small-img-card" href="#">
                     <div class="small-img-card__img-wrapper">
                         <picture>
                             <source srcset="/img/home/${data.linkWebp}" type="image/webp">
@@ -11,5 +11,5 @@ export function renderSmallImgCard(data) {
                     <div class="small-img-card__title">${data.title}</div>
 
                     <div class="small-img-card__date">${data.date}</div>
-                </div>`
+                </a>`
 }

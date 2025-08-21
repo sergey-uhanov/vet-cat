@@ -1,0 +1,40 @@
+.list-services {
+  padding-top: 59px;
+  padding-bottom: 148px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 40px;
+
+    @include media-breakpoint-down-equal(md) {
+      gap: 32px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-breakpoint-down-equal(xs) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-breakpoint-down(xxs) {
+      grid-template-columns: 1fr;
+      padding-left: 20px;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @include media-breakpoint-down-equal(sm) {
+      font-size: 16px;
+    }
+  }
+}

@@ -4,6 +4,7 @@
 
   @media (hover: hover) {
     &:hover{
+      cursor: pointer;
       color: $green
     }
   }

@@ -1,8 +1,4 @@
 @import '@/styles/base/global';
-@import '@/styles/ui/input';
-@import '@/styles/base/header';
-@import '@/styles/base/footer';
-@import '@/styles/base/sidebar';
 @import '@/styles/ui/button';
 @import '@/styles/ui/simple-card';
 @import '@/styles/ui/img-card';
@@ -18,17 +14,6 @@
 @import '@/styles/modules/swiper.css';
 @import '@/styles/widgets/triple-sleder';
 
-.container-slider {
-  max-width: 1210px;
-  margin: 0 auto;
-  padding: 0 15px;
-  position: relative;
-  left: 125px;
-
-  @include media-breakpoint-down-equal(l) {
-    left: 0;
-  }
-}
 
 .info-window {
   padding: 0 15px 30px 15px;

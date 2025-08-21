@@ -125,5 +125,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 32px;
+    transition: background 0.3s;
+
+    @media (hover: hover) {
+      &:hover {
+        background: $green;
+      }
+    }
   }
 }

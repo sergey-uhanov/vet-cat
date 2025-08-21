@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', async e => {
     await innerServiceCard()
     await expertsSliderInner()
     await storiesSliderInner()
-    initMap()
+    await initMap()
 })

@@ -1,0 +1,146 @@
+.banner {
+  max-width: 100%;
+  aspect-ratio: 7.315/1;
+  background: $green;
+  border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat( 5, 1fr);
+  align-items: center;
+
+  @include media-breakpoint-down-equal(xs) {
+    aspect-ratio: 4.315/1;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    span{
+      font-weight: $--700;
+      font-size: 20px;
+      line-height: 1.2;
+      color: $white;
+      height: 100%;
+      
+      @include media-breakpoint-down-equal(md) {
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-down-equal(sm) {
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-down-equal(xs) {
+        font-size: 8px;
+      }
+
+
+    }
+
+    &:not(:last-child) {
+      &:after{
+        content: "";
+        display: block;
+        height: 200px;
+        width: 1px;
+        background: $light-gray;
+        position: absolute;
+        right: 0;
+        top: -50px;
+        bottom: 0;
+
+      }
+    }
+  }
+
+
+  &__icon-wrapper {
+    width: 64px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-down-equal(sm) {
+      width: 100%;
+      max-width: 40px;
+    }
+
+    @include media-breakpoint-down-equal(xs) {
+      max-width: 25px;
+    }
+  }
+
+  &__icon{
+    &_syringe{
+      width: 45px;
+      aspect-ratio: 1/1;
+
+      @include media-breakpoint-down-equal(sm) {
+        width: 25px;
+      }
+
+      @include media-breakpoint-down-equal(xs) {
+        width: 100%;
+      }
+    }
+
+    &_bandage{
+      width: 40px;
+      aspect-ratio: 1/1;
+
+      @include media-breakpoint-down-equal(sm) {
+        width: 25px;
+      }
+
+      @include media-breakpoint-down-equal(xs) {
+        width: 100%;
+      }
+    }
+
+    &_hospital{
+      width: 46px;
+      height: 41px;
+
+
+      @include media-breakpoint-down-equal(sm) {
+        aspect-ratio: 1/1;
+        width: 25px;
+      }
+
+      @include media-breakpoint-down-equal(xs) {
+        width: 100%;
+      }
+    }
+
+    &_pet-hotel{
+      width: 64px;
+      aspect-ratio: 1/1;
+
+      @include media-breakpoint-down-equal(sm) {
+        width: 25px;
+      }
+
+      @include media-breakpoint-down-equal(xs) {
+        width: 100%;
+      }
+    }
+
+    &_nurse{
+      width: 44px;
+      height: 46px;
+      aspect-ratio: 1/1;
+
+      @include media-breakpoint-down-equal(sm) {
+        width: 25px;
+      }
+
+      @include media-breakpoint-down-equal(xs) {
+        width: 100%;
+      }
+    }
+  }
+}

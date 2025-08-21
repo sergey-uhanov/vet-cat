@@ -5,6 +5,10 @@
 @import '@/styles/mixins/media';
 @import '@/styles/vars/z-index';
 @import '@/styles/fonts/fontface';
+@import '@/styles/base/header';
+@import '@/styles/base/footer';
+@import '@/styles/base/sidebar';
+@import '@/styles/ui/input';
 
 img {
   display: block;
@@ -29,6 +33,18 @@ img {
   }
 }
 
+.container-slider {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  left: 125px;
+
+  @include media-breakpoint-down-equal(l) {
+    left: 0;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -38,12 +54,6 @@ img {
   @include media-breakpoint-down-equal(l) {
     margin-top: 75px;
   }
-}
-
-.main-wrapper {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .main {
