@@ -59,6 +59,34 @@
     }
   }
 
+  &_list-item {
+
+    height: 40px;
+    padding: 0 16px;
+    background: $fon3;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.2s ;
+
+    @media (hover: hover) {
+      &:hover{
+        color: $light-green;
+      }
+    }
+
+    &-active{
+      background: $green;
+      color: $white;
+
+      @media (hover: hover) {
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+  }
+
+
   &_disabled {
     background: $light-gray;
     pointer-events: none;

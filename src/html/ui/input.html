@@ -12,6 +12,10 @@
     {{/if}}
   />
 
+  {{#if button-class}}
+  <button class="{{button-class}}">{{button-text}}</button>
+  {{/if}}
+
   {{#if errorText}}
   <div class="error-text">{{errorText}}</div>
   {{/if}}

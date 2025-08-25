@@ -1,0 +1,425 @@
+<div class="tubs">
+    <h1 class="tubs__title">Стоимость услуг клиники</h1>
+    <p class="tubs__sub-title">Для удобства все собрали цены на все услуги в одном месте.
+        Выберите специализацию и воспользуйтесь поиском.</p>
+
+    <ul class="tubs__buttons-list">
+        <li class="tubs__button-item">
+            <button class="tubs__button button_list-item button_list-item-active">Все услуги</button>
+        </li>
+
+        <li class="tubs__button-item">
+            <button class="tubs__button button_list-item">Вакцинациячипирование</button>
+        </li>
+    </ul>
+
+    {{> ui/search-input}}
+
+    <div class="tubs__lists-wrapper">
+<!--        <li class="tubs__lists-item type-price">-->
+<!--            <h5 class="type-price__title"> Вакцинация и чипирование</h5>-->
+<!--            <p class="type-price__description">Цены указаны в российских рублях за одну процедуру/сеанс-->
+<!--                для одного животного-->
+<!--            </p>-->
+<!--            <div class="type-price__sub-title">Вакцинация собак импортной вакциной</div>-->
+<!--            <ul class="type-price__list">-->
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Нобивак Puppy (Нидерланды)</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Нобивак DHPPi+Lepto</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Нобивак DHPPi+Lepto+Rabies</p>-->
+<!--                    <p class="type-price__price-service">800</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Гексадог DHPPi+Lepto+Rabies (Франция)</p>-->
+<!--                    <p class="type-price__price-service">680</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Эурикан DHPPi+Lepto</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Эурикан DHPPi+Lepto</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Эурикан DHPPi+Lepto+Rabies</p>-->
+<!--                    <p class="type-price__price-service">1100</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Вангард 5/L (США)</p>-->
+<!--                    <p class="type-price__price-service">900</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Вангард 5/L+Rabies</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Вангард 7/L</p>-->
+<!--                    <p class="type-price__price-service">580</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Вангард 7/L+Rabies</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Нобивак Puppy (Нидерланды)</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--            </ul>-->
+
+<!--            <div class="type-price__sub-title">Вакцинация кошек импортной вакциной</div>-->
+<!--            <ul class="type-price__list">-->
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Нобивак Tricat (Нидерланды)</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Нобивак Tricat+Rabies</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Фелиген CRP (Франция)</p>-->
+<!--                    <p class="type-price__price-service">800</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Фелиген CRP+Rabies</p>-->
+<!--                    <p class="type-price__price-service">680</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Пуревакс</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Пуревакс+Rabies </p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Пуревакс с хламидиозом</p>-->
+<!--                    <p class="type-price__price-service">1100</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Пуревакс с хламидиозом +Rabies</p>-->
+<!--                    <p class="type-price__price-service">900</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Фелоцел-4 с хламидиозом (США)</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Фелоцел-4 с хламидиозом +Rabies</p>-->
+<!--                    <p class="type-price__price-service">580</p>-->
+
+<!--                </li>-->
+
+
+<!--            </ul>-->
+
+<!--            <div class="type-price__sub-title">Отечественная вакцина</div>-->
+<!--            <ul class="type-price__list">-->
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Мультифел-4 (для кошек)</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Мультифел-4 + Rabies</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Мультикан-8 (для собак)</p>-->
+<!--                    <p class="type-price__price-service">800</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Мультикан-8 (с бешенством)</p>-->
+<!--                    <p class="type-price__price-service">680</p>-->
+
+<!--                </li>-->
+
+<!--            </ul>-->
+
+<!--            <div class="type-price__sub-title">Вакцинация кроликов (миксоматоз + ВГБК)</div>-->
+<!--            <ul class="type-price__list">-->
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Ассоциированная вакцина (отечественная) —  1 раз в 6 месяцев</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Нобивак (импортная) —  1 раз в год</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+
+<!--            </ul>-->
+
+<!--            <div class="type-price__sub-title">Вакцинация против дерматофитии</div>-->
+<!--            <ul class="type-price__list">-->
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Вакдерм</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Вакдерм F</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Микродерм</p>-->
+<!--                    <p class="type-price__price-service">800</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Пиродог от пироплазмоза для собак</p>-->
+<!--                    <p class="type-price__price-service">680</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Импортная вакцина против бешенства</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Глобкан-5 (пассивная иммунизация собак)</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Глобфел-4 (пассивная иммунизация кошек)</p>-->
+<!--                    <p class="type-price__price-service">1100</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Паспорт для собак, кошек</p>-->
+<!--                    <p class="type-price__price-service">900</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Паспорт для кроликов</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Чипирование (с учетом чипа)+ выдача свидетельства + занесение в единую базу данных Animal-ID</p>-->
+<!--                    <p class="type-price__price-service">580</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Внесение данных в единую базу Animal-ID (без чипирования)</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </li>-->
+
+<!--        <li class="tubs__lists-item type-price">-->
+<!--            <h5 class="type-price__title">Дерматология</h5>-->
+<!--            <p class="type-price__description">Цены указаны в российских рублях за одну процедуру/сеанс-->
+<!--                для одного животного-->
+<!--            </p>-->
+<!--            <ul class="type-price__list">-->
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Первичный прием дерматолога (осмотр, постановка предварительного диагноза, назначение лечения)</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Повторный прием дерматолога</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Консультация дерматолога-->
+<!--                        по результатам исследований</p>-->
+<!--                    <p class="type-price__price-service">800</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Отоскопия на оба уха</p>-->
+<!--                    <p class="type-price__price-service">680</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Посев на дерматофиты</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Трихоскопия</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Цитологическое исследование из НСП</p>-->
+<!--                    <p class="type-price__price-service">1100</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Цитологическое исследование мазка-отпечатка с кожи</p>-->
+<!--                    <p class="type-price__price-service">900</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Исследование на эктопаразиты и дерматофиты </p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Цитоскрининг</p>-->
+<!--                    <p class="type-price__price-service">580</p>-->
+
+<!--                </li>-->
+
+<!--            </ul>-->
+
+<!--        </li>-->
+
+<!--        <li class="tubs__lists-item type-price">-->
+<!--            <h5 class="type-price__title">Реанимация-->
+<!--                и интенсивная терапия</h5>-->
+<!--            <p class="type-price__description">Цены указаны в российских рублях за одну процедуру/сеанс-->
+<!--                для одного животного-->
+<!--            </p>-->
+<!--            <ul class="type-price__list">-->
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Первичный прием дерматолога (осмотр, постановка предварительного диагноза, назначение лечения)</p>-->
+<!--                    <p class="type-price__price-service">1300</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Повторный прием дерматолога</p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Консультация дерматолога-->
+<!--                        по результатам исследований</p>-->
+<!--                    <p class="type-price__price-service">800</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Отоскопия на оба уха</p>-->
+<!--                    <p class="type-price__price-service">680</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Посев на дерматофиты</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Трихоскопия</p>-->
+<!--                    <p class="type-price__price-service">400</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Цитологическое исследование из НСП</p>-->
+<!--                    <p class="type-price__price-service">1100</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Цитологическое исследование мазка-отпечатка с кожи</p>-->
+<!--                    <p class="type-price__price-service">900</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Исследование на эктопаразиты и дерматофиты </p>-->
+<!--                    <p class="type-price__price-service">550</p>-->
+
+<!--                </li>-->
+
+<!--                <li class="type-price__service-price">-->
+<!--                    <p class="type-price__name-service">Цитоскрининг</p>-->
+<!--                    <p class="type-price__price-service">580</p>-->
+
+<!--                </li>-->
+
+<!--            </ul>-->
+
+<!--        </li>-->
+
+    </div>
+
+</div>

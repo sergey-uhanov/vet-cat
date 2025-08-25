@@ -23,30 +23,58 @@
     border: 1px solid $danger;
   }
 
-  &__field {
-    width: 100%;
-    padding: 35px 35px 35px 80px;
-    color: $black;
-    font-size: 16px;
-    outline: none;
-    line-height: 1.5;
+  &__search-input {
+    input {
+      width: 100%;
+      padding: 35px 35px 35px 80px;
+      color: $black;
+      font-size: 16px;
+      outline: none;
+      line-height: 1.5;
 
-    &:-webkit-autofill {
-      transition: background-color 999999s ease-in-out 0s;
+      &:-webkit-autofill {
+        transition: background-color 999999s ease-in-out 0s;
+      }
+
+      @include media-breakpoint-down-equal(l) {
+        padding: 20px 35px 20px 50px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 12px;
+
+      }
+
+      &::placeholder {
+        color: $light-gray;
+      }
     }
+  }
 
-    @include media-breakpoint-down-equal(l) {
-      padding: 20px 35px 20px 50px;
+
+  &__text-search {
+    border: 2px solid $green;
+    height: 48px;
+    border-radius: 16px;
+    padding: 11px 20px 13px 20px;
+    overflow: hidden;
+    background: $white;
+
+    input {
+      font-weight: 400;
+      font-size: 16px;
     }
+  }
 
-    @include media-breakpoint-down(md) {
-      font-size: 12px;
-
-    }
-
-    &::placeholder {
-      color: $light-gray;
-    }
+  &__text-search-button {
+    height: 100%;
+    background-color: $green;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 24px;
+    color: $white;
+    cursor: pointer;
   }
 
   &__error {
