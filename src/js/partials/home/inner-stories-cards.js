@@ -1,5 +1,5 @@
 import {collection, getDocs} from "firebase/firestore";
-import {db} from "../../../../firebase.js";
+import {db} from "#/firebase.js";
 import {getElement} from "@/js/composables/dom-manipulator.js";
 import {renderSmallImgCard} from "@/js/ui/render-small-img-card.js";
 

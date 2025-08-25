@@ -1,10 +1,10 @@
 export function renderImgCart(data) {
-
+    const base = process.env.NODE_ENV === 'production' ? '/vet-cat/' : '/'
     return ` <a class="swiper-slide img-card" href="#">
                     <div class="img-card__img-wrapper">
                         <picture>
-                            <source srcset="/img/home/${data.imgLinkWebp}" type="image/webp">
-                            <img class="img-card__img" src="/img/home/${data.imgLinkPng}" width="344" height="400"
+                            <source srcset="${base}img/home/${data.imgLinkWebp}" type="image/webp">
+                            <img class="img-card__img" src="${base}img/home/${data.imgLinkPng}" width="344" height="400"
                                  alt="expert photo" loading="lazy">
                         </picture>
                         <div class="img-card__hover-information">

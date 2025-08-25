@@ -31,7 +31,7 @@
     "vite-plugin-html": "^3.2.2"
   },
   "dependencies": {
-    "@googlemaps/js-api-loader": "^1.16.8",
+    "@googlemaps/js-api-loader": "^1.16.10",
     "air-datepicker": "^3.5.3",
     "autoprefixer": "^10.4.19",
     "dotenv": "^16.4.7",

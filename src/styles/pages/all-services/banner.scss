@@ -24,6 +24,18 @@
       line-height: 1.2;
       color: $white;
       height: 100%;
+      transition: color 0.3s;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 0;
+        background: $white;
+        position: absolute;
+        bottom: 0;
+        transition: width 0.3s;
+      }
       
       @include media-breakpoint-down-equal(md) {
         font-size: 16px;
@@ -52,6 +64,17 @@
         top: -50px;
         bottom: 0;
 
+      }
+    }
+
+    &_active{
+      span{
+        color: red;
+        position: relative;
+
+        &:after {
+          width: 100%;
+        }
       }
     }
   }

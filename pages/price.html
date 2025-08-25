@@ -4,11 +4,12 @@
     <link rel="preload" href="src/styles/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="src/styles/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="src/styles/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="src/styles/home.scss"/>
-    <title>Home page</title>
+    <link rel="stylesheet" href="/src/styles/price.scss"/>
+    <title>Стоимость услуг клиники</title>
 </head>
 <body>
 {{> ui/dark-back}}
@@ -17,32 +18,17 @@
     {{> base/header}}
     {{> base/sidebar}}
 
-    <main class="main ">
+    <main class="main">
+        <div class="container">
+            {{> ui/breadcrumbs itemText1="Стоимость" itemUrl1=" "}}
 
-        {{> pages/home/first-screen }}
-
-        {{> pages/home/popular-services }}
-
-        {{> pages/home/presentation }}
-
-        {{> pages/home/experts }}
-
-        {{> pages/home/stories }}
-
-        {{> pages/home/blog }}
-
-        {{> pages/home/promo }}
-
-        {{> pages/home/location }}
-
+        </div>
     </main>
+
     {{> base/footer}}
 
     {{> sprite/base-sprite}}
 </div>
-
-
-
-<script type="module" src="/src/js/main.js"></script>
+<script type="module" src="/src/js/price.js"></script>
 </body>
 </html>
