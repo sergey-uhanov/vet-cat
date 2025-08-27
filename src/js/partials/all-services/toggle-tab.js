@@ -2,7 +2,8 @@ import {classManipulator, getElement, getElements} from "@/js/composables/dom-ma
 import {allServicesListRequest} from "@/js/partials/all-services/all-services-list-request.js";
 import {renderList} from "@/js/partials/all-services/render-list.js";
 import {useQuery} from "@/js/composables/use-query.js";
-import {capitalizeName} from "@/js/partials/all-services/capitalize-name.js";
+import {capitalizeName} from "@/js/composables/capitalize-name.js";
+
 
 export async function toggleTab() {
     const useQueryParam = useQuery()

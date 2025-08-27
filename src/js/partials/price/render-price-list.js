@@ -21,7 +21,7 @@ function renderServices(services) {
 }
 
 export function createPriceList(data) {
-    const ul = renderElement("ul", "tubs__lists")
+    const ul = document.createDocumentFragment()
 
     data.forEach(block => {
         const li = renderElement("li", ["tubs__lists-item", "type-price"])
