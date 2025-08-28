@@ -45,6 +45,22 @@ img {
   }
 }
 
+.container-work-time {
+  max-width: 1222px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  left: 125px;
+
+  @include media-breakpoint-down-equal(l) {
+    left: 40px;
+  }
+
+  @include media-breakpoint-down(l) {
+    left: 0;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

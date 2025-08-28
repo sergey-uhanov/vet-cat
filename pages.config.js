@@ -21,6 +21,10 @@ const pages = [
     name: 'price',
     path: resolve(__dirname, './pages/price.html'),
   },
+  {
+    name: 'price',
+    path: resolve(__dirname, './pages/work-time.html'),
+  },
 
 ]
 
