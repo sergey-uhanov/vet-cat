@@ -1,4 +1,4 @@
-import{g as u,a as L,c as O,d as P,i as D}from"./firebase-C_D9rmmj.js";import{S as j,t as C,e as q}from"./experts-slider-inner-D6omVQZc.js";function x(){const t=u(".first-screen__background"),e=u(".first-screen");e.style.height=getComputedStyle(t).height,window.addEventListener("resize",()=>{e.style.height=getComputedStyle(t).height})}async function F(){return(await L(O(P,"cards-services"))).docs.map(e=>({id:e.id,...e.data()}))}function U(t){const e=u(".service-slider"),i=u(".swiper-wrapper",e);t.forEach(r=>{const n=`
+import{g as u,a as L,c as O,d as P,i as D}from"./firebase-kXAzlJEp.js";import{t as C,e as j}from"./experts-slider-inner-BF_kbTxX.js";import{S as q}from"./navigation-BLWR7E83.js";function x(){const t=u(".first-screen__background"),e=u(".first-screen");e.style.height=getComputedStyle(t).height,window.addEventListener("resize",()=>{e.style.height=getComputedStyle(t).height})}async function F(){return(await L(O(P,"cards-services"))).docs.map(e=>({id:e.id,...e.data()}))}function U(t){const e=u(".service-slider"),i=u(".swiper-wrapper",e);t.forEach(r=>{const n=`
                              <div class=" triple-slider__slide simple-card swiper-slide">
                                 <div class="simple-card__title">${r.title}</div>
                                 <div class="simple-card__text">${r.text}
@@ -8,7 +8,7 @@ import{g as u,a as L,c as O,d as P,i as D}from"./firebase-C_D9rmmj.js";import{S 
                                     <path d="M-1.74845e-07 5L17 5M17 5C15.3146 3.85714 12.7865 1 12.7865 1M17 5C15.3146 6.14286 12.7865 9 12.7865 9" stroke="white" stroke-width="2" />
                                     </svg>
                                 </a>
-                            </div>`;i.insertAdjacentHTML("beforeend",n)})}async function T(){try{const t=await F();U(t)}catch(t){console.error(t)}}function K(t,e,i){new j(`.${t}`,{slidesPerView:4,spaceBetween:40,loop:!0,navigation:{nextEl:`.${e}`,prevEl:`.${i}`},breakpoints:{320:{slidesPerView:"auto",spaceBetween:20},1100:{slidesPerView:4,spaceBetween:40}}})}function N(t){const e="/vet-cat/";return` <a class="swiper-slide small-img-card" href="#">
+                            </div>`;i.insertAdjacentHTML("beforeend",n)})}async function T(){try{const t=await F();U(t)}catch(t){console.error(t)}}function K(t,e,i){new q(`.${t}`,{slidesPerView:4,spaceBetween:40,loop:!0,navigation:{nextEl:`.${e}`,prevEl:`.${i}`},breakpoints:{320:{slidesPerView:"auto",spaceBetween:20},1100:{slidesPerView:4,spaceBetween:40}}})}function N(t){const e="/vet-cat/";return` <a class="swiper-slide small-img-card" href="#">
                     <div class="small-img-card__img-wrapper">
                         <picture>
                             <source srcset="${e}img/home/${t.linkWebp}" type="image/webp">
@@ -23,4 +23,4 @@ import{g as u,a as L,c as O,d as P,i as D}from"./firebase-C_D9rmmj.js";import{S 
       <div class="info-window">
         <span>Дополнительная важная информация!</span>
         <strong>Кто грустит тот трансвистит</strong>
-      </div>`});s.addListener("click",()=>{a.open({anchor:s,map:w})}),o.addListener("click",()=>{a.open({anchor:o,map:w})})}document.addEventListener("DOMContentLoaded",async t=>{D(),x(),C("triple-slider_services","triple-slider__button-next-icon_service","triple-slider__button-prev-icon_service"),C("triple-slider_experts","triple-slider__button-next-icon_experts","triple-slider__button-prev-icon_experts"),K("triple-slider_stories","triple-slider__button-next-icon_stories","triple-slider__button-prev-icon_stories"),await T(),await q(),await B(),await J()});
+      </div>`});s.addListener("click",()=>{a.open({anchor:s,map:w})}),o.addListener("click",()=>{a.open({anchor:o,map:w})})}document.addEventListener("DOMContentLoaded",async t=>{D(),x(),C("triple-slider_services","triple-slider__button-next-icon_service","triple-slider__button-prev-icon_service"),C("triple-slider_experts","triple-slider__button-next-icon_experts","triple-slider__button-prev-icon_experts"),K("triple-slider_stories","triple-slider__button-next-icon_stories","triple-slider__button-prev-icon_stories"),await T(),await j(),await B(),await J()});
