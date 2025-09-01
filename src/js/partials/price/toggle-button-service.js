@@ -9,15 +9,17 @@ export async function toggleButton() {
     const buttons = getElements('.tubs__button')
     const queryParams = useQuery()
 
+
     buttons.forEach(button => {
         button.addEventListener('click', async (e) => {
+
+            if(queryParams.getParam('active') === button.innerText) return
 
             const data = await priceRequest(button.innerText)
             container.innerHTML = ''
 
             container.append(createPriceList(data))
             setActivePriceButtons(button.innerText)
-            queryParams.setParam('active', e.target.innerText)
         })
     })
 

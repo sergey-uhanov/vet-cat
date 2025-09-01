@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preload" href="src/styles/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="src/styles/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="src/styles/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/src/styles/all-employees.scss"/>
+    <title>Все сотрудники</title>
+</head>
+<body>
+{{> ui/dark-back}}
+
+<div class="wrapper">
+    {{> base/header}}
+    {{> base/sidebar}}
+
+    <main class="main">
+        <div class="container">
+            {{> ui/breadcrumbs itemText1="Сотрудники" itemUrl1="#"}}
+
+            {{> pages/all-employees/employees-tubs}}
+
+        </div>
+
+
+    </main>
+    {{> base/footer}}
+
+    {{> sprite/base-sprite}}
+</div>
+<script type="module" src="/src/js/all-employees.js"></script>
+</body>
+</html>

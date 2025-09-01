@@ -39,6 +39,7 @@ img {
   padding: 0 15px;
   position: relative;
   left: 125px;
+  transition: opacity 0.3s;
 
   @include media-breakpoint-down-equal(l) {
     left: 0;

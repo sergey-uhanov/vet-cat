@@ -1,0 +1,40 @@
+.employees-tubs {
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 34px;
+
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__sub-title {
+    max-width: 603px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.38;
+  }
+
+  &__content{
+    transition: opacity 0.1s;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 74px 40px;
+  }
+
+  &__buttons-block{
+    margin-top: 74px;
+    margin-bottom: 72px;
+    display: flex;
+    gap: 20px 17px;
+    flex-wrap: wrap;
+  }
+}

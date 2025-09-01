@@ -41,8 +41,8 @@
     }
 
     @include media-breakpoint-down-equal(xxs) {
-      padding-left: 18px;
-      width: 136px;
+      padding-left: 0;
+      width: 110px;
     }
 
     img {
@@ -192,6 +192,10 @@
     @include media-breakpoint-down-equal(l) {
       padding: 13px 20px;
     }
+
+    @include media-breakpoint-down-equal(xs) {
+      padding: 13px 5px 13px 5px;
+    }
   }
 
   &__number-phone {
@@ -218,6 +222,10 @@
     color: $danger;
     background: transparent;
     padding: 0;
+
+    @include media-breakpoint-down-equal(xs) {
+      font-size: 14px;
+    }
 
     @include media-breakpoint-down-equal(xxs) {
       font-size: 12px;
