@@ -1,0 +1,48 @@
+.ways{
+  padding-top: 155px;
+  padding-bottom: 112px;
+
+  &__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    @include media-breakpoint-down-equal(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card{
+    padding: 35px 56px 0 56px;
+    background: $logo-bg;
+    min-height: 364px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px 0 rgba(49, 53, 54, 0.05);
+  @include media-breakpoint-down-equal(xs) {
+    padding: 15px 20px 0 20px;
+    min-height: auto;
+  }
+  }
+
+  &__card-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+    margin-bottom: 23px;
+
+    @include media-breakpoint-down-equal(xs) {
+      font-size: 18px;
+    }
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.41;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-down-equal(xs) {
+      font-size: 12px;
+    }
+  }
+}

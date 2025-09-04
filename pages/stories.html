@@ -8,8 +8,8 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/src/styles/contacts.scss"/>
-    <title>Контакты</title>
+    <link rel="stylesheet" href="/src/styles/stories.scss"/>
+    <title>Истории</title>
 </head>
 <body>
 {{> ui/dark-back}}
@@ -20,17 +20,17 @@
 
     <main class="main">
         <div class="container">
-            {{> ui/breadcrumbs itemText1="Контакты" itemUrl1="#"}}
+            {{> ui/breadcrumbs  itemText1="Истории пациентов" itemUrl1="#"}}
         </div>
 
-        {{> pages/contacts/main-scene}}
-        {{> pages/contacts/ways}}
+        {{> pages/stories/tubs }}
 
     </main>
+
     {{> base/footer}}
 
     {{> sprite/base-sprite}}
 </div>
-<script type="module" src="/src/js/contacts.js"></script>
+<script type="module" src="/src/js/stories.js"></script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<section class="main-scene">
+    <div class="container">
+        <h1 class="main-scene__title">
+            Контакты ветеринарного центра «ВетКэт»
+        </h1>
+        <div class="main-scene__content">
+            <div class="main-scene__text-block">
+                <a class="main-scene__phone" href="tel:+380971102303">+38 (097) 110-23-03</a>
+                <p class="main-scene__description">Единый круглосуточный номер</p>
+                <a class="main-scene__email" href="mailto:vetket@ukr.net?subject=Запрос&body=Здравствуйте!"> vetket@ukr.net</a>
+                <div class="main-scene__button-section">
+                    {{> ui/selection-button-group active-button1="button-group__button_active" button-attribute1="Приморский" button1="Приморский" button-attribute2="суворовский"
+                    button2="суворовский"}}
+                </div>
+               <div class="main-scene__address-card-wrapper">
+                   <div class="main-scene__address-card1 address-card">
+                       <p class="address-card__title">Клиника «ВетКэт» в Приморском</p>
+                       <p class="address-card__address">Одесса, Чкалова, 57 корпус 5</p>
+                       <p class="address-card__description">Круглосуточно, без выходных</p>
+                       <a class="address-card__link" href="#">Как добраться?
+                           {{> base/svg-manager svg-manager-id="row-short" svg-manager-class="address-card__link-icon"}}
+                       </a>
+                   </div>
+                   <div class="main-scene__address-card2  address-card address-card_hidden">
+                       <p class="address-card__title">Клиника «ВетКэт» в Царево</p>
+                       <p class="address-card__address">Киев, Пупкина, 256 </p>
+                       <p class="address-card__description">Круглосуточно, без выходных</p>
+                       <a class="address-card__link" href="#">Как добраться?
+                           {{> base/svg-manager svg-manager-id="row-short" svg-manager-class="address-card__link-icon"}}
+                       </a>
+                   </div>
+               </div>
+            </div>
+            <div class="main-scene__map" id="map"></div>
+        </div>
+    </div>
+</section>

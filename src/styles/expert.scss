@@ -1,0 +1,13 @@
+@import '@/styles/base/global';
+@import '@/styles/ui/button';
+@import '@/styles/ui/breadcrumbs';
+@import '@/styles/pages/expert/first-screen';
+@import '@/styles/pages/expert/work-time';
+@import '@/styles/pages/expert/expert-personal-information';
+@import '@/styles/pages/expert/feedback';
+@import '@/styles/pages/work-time/work-schedule';
+@import '@/styles/modules/swiper.css';
+
+.main{
+  background: $logo-bg;
+}

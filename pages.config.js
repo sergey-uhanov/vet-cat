@@ -29,6 +29,14 @@ const pages = [
     name: 'all-employees',
     path: resolve(__dirname, './pages/all-employees.html'),
   },
+  {
+    name: 'employee',
+    path: resolve(__dirname, './pages/expert.html'),
+  },
+  {
+    name: 'stories',
+    path: resolve(__dirname, './pages/stories.html'),
+  },
 
 ]
 

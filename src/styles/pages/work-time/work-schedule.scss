@@ -34,6 +34,11 @@
     padding-top: 63px;
     padding-bottom: 77px;
 
+    &_full-width{
+      justify-content: space-between;
+      padding-bottom: 58px;
+    }
+
     @include media-breakpoint-down(lg) {
       column-gap: 0;
 
@@ -65,6 +70,27 @@
 
     @include media-breakpoint-down-equal(xs) {
       min-width: 150px;
+    }
+  }
+
+  &__icon-location{
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+  }
+
+  &__location{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+    margin-top: 10px;
+    margin-left: 43px;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down-equal(md) {
+      font-size: 18px;
+      margin-left: 0px;
     }
   }
 
@@ -172,6 +198,10 @@
     display: flex;
     align-items: center;
 
+    &_alt-r{
+      right: 0;
+    }
+
     @include media-breakpoint-down(l) {
       right: 0;
     }
@@ -230,6 +260,10 @@
     line-height: 1.17;
     display: block;
     margin-bottom: 6px;
+
+    &_weekend{
+      color: red;
+    }
 
     @include media-breakpoint-down-equal(xs) {
       font-size: 12px;

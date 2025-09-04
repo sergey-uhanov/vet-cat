@@ -1,0 +1,67 @@
+.tubs {
+
+
+  &__cards-wrapper {
+    background: $white;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.16;
+    margin-bottom: 46px;
+
+    @include media-breakpoint-down-equal(sm) {
+      font-size: 32px;
+    }
+  }
+
+  &__buttons{
+    width: fit-content;
+    margin-bottom: 24px;
+  }
+
+  &__cards-wrapper{
+    padding-top: 64px;
+    padding-bottom: 160px;
+  }
+
+  &__cards {
+    --gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--gap);
+    row-gap: 56px;
+
+    @include media-breakpoint-down-equal(md) {
+      --gap: 20px;
+    }
+    @include media-breakpoint-down-equal(sm) {
+
+    }
+  }
+
+  &__cards .small-img-card {
+    flex: 0 0 calc((100% - 3 * var(--gap)) / 4);
+
+    @include media-breakpoint-down-equal(sm) {
+      flex: 1;
+      max-width: 50%;
+      min-width: 200px;
+    }
+    
+    @include media-breakpoint-down-equal(xs) {
+      max-width: 100%;
+    }
+  }
+
+
+@include media-breakpoint-up-equal(md) {
+  &__cards .small-img-card:nth-child(7n + 1),
+  &__cards .small-img-card:nth-child(7n + 2),
+  &__cards .small-img-card:nth-child(7n + 3) {
+    flex-basis: calc((100% - 2 * var(--gap)) / 3);
+  }
+}
+}
+

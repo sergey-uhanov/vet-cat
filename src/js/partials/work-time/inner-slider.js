@@ -8,7 +8,7 @@ export async function innerSlider() {
     const container = getElement('.work-schedule__wrapper');
     try {
         const data = await workTimeRequest('Строгино')
-
+        console.log(data)
          container.append(generateScheduleDOM(data))
 
         const sliders = getElements('.work-schedule__content')

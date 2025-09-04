@@ -1,0 +1,105 @@
+.expert-personal-information {
+  background: white;
+  padding-bottom: 96px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+    align-items: flex-start;
+
+    @include media-breakpoint-down-equal(sm) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__item {
+    //max-width: 536px;
+    background: $logo-bg;
+    padding: 35px 56px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px 0 rgba(49, 53, 54, 0.05);
+
+    @include media-breakpoint-down-equal(sm) {
+      padding: 15px ;
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-down-equal(md) {
+      font-size: 18px;
+    }
+  }
+
+  &__item-title-subtitle {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.17;
+    margin-bottom: 16px;
+    @include media-breakpoint-down-equal(md) {
+      font-size: 14px;
+    }
+  }
+
+  &__year-item {
+    display: flex;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.41;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-down-equal(sm) {
+      font-size: 14px;
+    }
+
+    &_single {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__year {
+    margin-right: 16px;
+
+  }
+
+  &__year-description {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.41176;
+    max-width: 364px;
+  }
+
+  &__list {
+    padding-left: 16px;
+  }
+
+  &__list-item {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.41;
+    max-width: 408px;
+    position: relative;
+    margin-bottom: 12px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -16px;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      background: $green;
+    }
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+}

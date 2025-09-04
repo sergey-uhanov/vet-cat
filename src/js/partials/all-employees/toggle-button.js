@@ -1,7 +1,6 @@
 import {classManipulator, getElements} from "@/js/composables/dom-manipulator.js";
 import {useQuery} from "@/js/composables/use-query.js";
-import {employeesRequest} from "@/js/partials/all-employees/employees-request.js";
-import {data2} from "@/js/partials/all-employees/inner-employees.js";
+
 
 
 
@@ -21,10 +20,7 @@ export async function toggleButton() {
                     ? classManipulator(btn, 'add', 'button_list-item-active')
                     : classManipulator(btn, 'remove', 'button_list-item-active')
             })
-            console.log(data2)
+
         })
     })
-
-
-
 }

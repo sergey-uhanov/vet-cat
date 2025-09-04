@@ -11,16 +11,17 @@ const loader = new Loader({
 let map
 
 export async function initMap() {
+    console.log(1)
     const google = await loader.load()
 
     const position1 = { lat: 50.4194, lng: 30.4809 }
     const position2 = { lat: 50.444, lng: 30.619 }
 
     const beachFlagImg1 = document.createElement('img')
-    beachFlagImg1.src = new URL('/img/home/1.png', import.meta.url).href
+    beachFlagImg1.src = new URL('/img/map/1.png', import.meta.url).href
 
     const beachFlagImg2 = document.createElement('img')
-    beachFlagImg2.src = new URL('/img/home/2.png', import.meta.url).href
+    beachFlagImg2.src = new URL('/img/map/2.png', import.meta.url).href
 
     map = new google.maps.Map(getElement('#map'), {
         zoom: 11,

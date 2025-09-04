@@ -1,0 +1,99 @@
+.feedback {
+  padding: 67px 0 113px 0;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+
+    @include media-breakpoint-down-equal(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__title-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 24px;
+    height: 48px;
+    border-radius: 16px;
+    color: $white;
+    background: $green;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+
+    @media (hover: hover) {
+      &:hover {
+        background: $light-green;
+      }
+    }
+  }
+}
+
+.feedback-card{
+  background: $white;
+  padding: 27px 32px;
+  border-radius: 16px;
+  max-width: 728px;
+
+  &_short{
+    max-width: 344px;
+
+    @include media-breakpoint-down-equal(sm) {
+      max-width: 100%;
+    }
+  }
+
+  &__name{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.64;
+    margin-bottom: 18px;
+    @include multiLineTruncate(5)
+  }
+
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+    color: $green;
+    gap: 8px;
+  }
+
+  &__row-icon{
+    width: 19px;
+    height: 10px;
+  }
+
+  &__date{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: $text3;
+  }
+}

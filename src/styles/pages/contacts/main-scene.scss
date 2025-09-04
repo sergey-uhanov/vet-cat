@@ -1,0 +1,110 @@
+.main-scene {
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.16;
+    margin-bottom: 65px;
+
+    @include media-breakpoint-down-equal(sm) {
+      font-size: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    @include media-breakpoint-down-equal(sm) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text-block{
+    width: 326px;
+
+    @include media-breakpoint-down(xxs) {
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+    margin-bottom: 3px;
+    display: block;
+  }
+
+  &__map {
+    max-width: 632px;
+    width: 100%;
+    aspect-ratio: 1.44/1;
+    margin-bottom: 3px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+    color: $font-color;
+    margin-bottom: 15px;
+  }
+
+  &__email {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 44px;
+  }
+
+  &__button-section {
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+
+  &__address-card-wrapper {
+    position: relative;
+  }
+
+}
+
+.address-card {
+  position: absolute;
+
+
+  &_hidden {
+    opacity: 0;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  &__address, &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__description {
+    margin-bottom: 27px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: $green;
+  }
+
+  &__link-icon {
+    width: 19px;
+    height: 10px;
+    margin-left: 8px;
+  }
+}

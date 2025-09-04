@@ -4,13 +4,17 @@
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 34px;
-
+    line-height: 1.16;
   }
 
   &__description {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+
+    @include media-breakpoint-down-equal(sm) {
+      flex-direction: column;
+    }
   }
 
   &__sub-title {
@@ -20,7 +24,13 @@
     line-height: 1.38;
   }
 
-  &__content{
+  &__switch-button{
+    width: 324px;
+    position: relative;
+    top: 5px;
+  }
+
+  &__content {
     transition: opacity 0.1s;
   }
 
@@ -28,13 +38,31 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 74px 40px;
+    min-height: 50vh;
+    position: relative;
+    margin-bottom: 32px;
+    @include media-breakpoint-down-equal(xs) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-down-equal(xxs) {
+      grid-template-columns: 1fr;
+    }
   }
 
-  &__buttons-block{
-    margin-top: 74px;
+  &__buttons-block {
+    margin-top: 37px;
     margin-bottom: 72px;
     display: flex;
-    gap: 20px 17px;
+    gap: 7px 7px;
     flex-wrap: wrap;
+  }
+
+  &__empty-cards {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
   }
 }

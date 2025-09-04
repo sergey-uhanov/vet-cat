@@ -1,6 +1,10 @@
 .breadcrumbs {
   padding: 57px 0 5px 0;
 
+  &_green-bg{
+    background: $logo-bg;
+  }
+
   @include media-breakpoint-down-equal(sm) {
     padding: 25px 0;
   }

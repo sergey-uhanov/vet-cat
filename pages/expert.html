@@ -8,8 +8,8 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/src/styles/contacts.scss"/>
-    <title>Контакты</title>
+    <link rel="stylesheet" href="/src/styles/expert.scss"/>
+    <title>Страница сотрудника</title>
 </head>
 <body>
 {{> ui/dark-back}}
@@ -20,17 +20,22 @@
 
     <main class="main">
         <div class="container">
-            {{> ui/breadcrumbs itemText1="Контакты" itemUrl1="#"}}
+            {{> ui/breadcrumbs modifier="green-bg" itemText1="Сотрудники" itemUrl1="/pages/all-employees.html" itemText2="Малицкая Валерия Викторовна" itemUrl2="#"}}
         </div>
 
-        {{> pages/contacts/main-scene}}
-        {{> pages/contacts/ways}}
+        {{> pages/expert/first-screen}}
+
+        {{> pages/expert/work-time}}
+
+        {{> pages/expert/personal-information}}
+
+        {{> pages/expert/feedback}}
 
     </main>
     {{> base/footer}}
 
     {{> sprite/base-sprite}}
 </div>
-<script type="module" src="/src/js/contacts.js"></script>
+<script type="module" src="/src/js/expert.js"></script>
 </body>
 </html>
