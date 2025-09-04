@@ -1,0 +1,1 @@
+import{i as e,g as t}from"./header-zVkTQlWD.js";import{i}from"./init-slider-B_-0JLsa.js";import"./navigation-BLWR7E83.js";document.addEventListener("DOMContentLoaded",async r=>{e(),i(t(".work-schedule__wrapper"))});
