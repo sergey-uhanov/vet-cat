@@ -1,0 +1,21 @@
+.slider {
+
+  width: 400px;
+  border: 1px solid grey;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    gap: 56px;
+    transition: transform 0.3s;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__next, &__prev {
+    font-size: 36px;
+  }
+}

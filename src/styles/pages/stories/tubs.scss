@@ -32,12 +32,10 @@
     flex-wrap: wrap;
     column-gap: var(--gap);
     row-gap: 56px;
+    min-height: 50vh;
 
     @include media-breakpoint-down-equal(md) {
       --gap: 20px;
-    }
-    @include media-breakpoint-down-equal(sm) {
-
     }
   }
 

@@ -1,15 +1,15 @@
 import {classManipulator, getElement, getElements} from "@/js/composables/dom-manipulator.js";
+
 // const containerElement = getElement(buttonGroup);
 const slider = getElement('.button-group__slider');
 const buttons = getElements('.button-group__button');
-let activeButton = getElement('.button-group__button_active')?? buttons[0];
+let activeButton = getElement('.button-group__button_active') ?? buttons[0];
 
 export function selectionButtonGroup(buttonGroup) {
 
-     moveSliderTo(activeButton);
+    moveSliderTo(activeButton);
     buttons.forEach(button => {
-
-        button.addEventListener('click',changeSliderTo);
+        button.addEventListener('click', changeSliderTo);
     });
 }
 
@@ -23,10 +23,10 @@ export function moveSliderTo(button) {
 
 function changeSliderTo(e) {
 
-        buttons.forEach(b => classManipulator(b, 'remove', 'button-group__button_active'));
-        classManipulator(e.target, 'add', 'button-group__button_active');
-        activeButton = e.target;
+    buttons.forEach(b => classManipulator(b, 'remove', 'button-group__button_active'));
+    classManipulator(e.target, 'add', 'button-group__button_active');
+    activeButton = e.target;
 
-        moveSliderTo(activeButton);
+    moveSliderTo(activeButton);
 
 }

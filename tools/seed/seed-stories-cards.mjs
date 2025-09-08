@@ -23,36 +23,36 @@ const db = admin.firestore();
 const items = [
     {
         id: "FrUbdMJMMbPQ34543",
-        linkWebp: 'small-img-card.webp',
-        linkPng: 'small-img-card.png',
+        linkWebp: 'story.webp',
+        linkPng: 'story.png',
         title: 'Непростое лечение перелома нижней челюсти у кошки Маруськи',
         date: '2018-05-07',
     },
     {
         id: "FrUbdMJMMbPQ345454",
-        linkWebp: 'small-img-card1.webp',
-        linkPng: 'small-img-card1.png',
+        linkWebp: 'story2.webp',
+        linkPng: 'story2.png',
         title: 'Отравление немытым виноградом у пекинеса Гремлина',
         date: '2018-05-07',
     },
     {
         id: "FrUbdMJMMbP3453453",
-        linkWebp: 'small-img-card2.webp',
-        linkPng: 'small-img-card2.png',
+        linkWebp: 'story3.webp',
+        linkPng: 'story3.png',
         title: 'Патологические роды и кесарево сечение у крысы Анфисы',
         date: '2018-05-07',
     },
     {
         id: "FrUbdMJMMb45756",
-        linkWebp: 'small-img-card3.webp',
-        linkPng: 'small-img-card3.png',
+        linkWebp: 'story4.webp',
+        linkPng: 'story4.png',
         title: 'Острый панкреатит у йоркширского терьера  Луи II Саксонского',
         date: '2018-05-07',
     },
     {
         id: "FrUbdMJMMbPQ4553453",
-        linkWebp: 'small-img-card.webp',
-        linkPng: 'small-img-card.png',
+        linkWebp: 'story.webp',
+        linkPng: 'story.png',
         title: 'Непростое лечение перелома нижней челюсти у кошки Маруськи',
         date: '2018-05-07',
     },
@@ -102,7 +102,7 @@ async function insertBatch(collectionName, arr) {
 
 (async () => {
     try {
-        await insertBatch('cards-stories', items);
+        await insertBatch('истории-статьи', items);
         console.log('Seeding finished');
         process.exit(0);
     } catch (err) {
