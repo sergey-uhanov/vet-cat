@@ -1,0 +1,1 @@
+import"./swiper-DrKpJP0W.js";import{S as t}from"./navigation-BLWR7E83.js";function a(e,i,r,s=40){new t(`.${e}`,{slidesPerView:4,loop:!0,navigation:{nextEl:`.${i}`,prevEl:`.${r}`},breakpoints:{320:{slidesPerView:"auto",spaceBetween:20},1100:{slidesPerView:4,spaceBetween:s}}})}export{a as q};
