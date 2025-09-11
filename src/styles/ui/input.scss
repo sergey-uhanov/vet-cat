@@ -42,7 +42,6 @@
 
       @include media-breakpoint-down(md) {
         font-size: 12px;
-
       }
 
       &::placeholder {
@@ -50,7 +49,6 @@
       }
     }
   }
-
 
   &__text-search {
     border: 2px solid $green;

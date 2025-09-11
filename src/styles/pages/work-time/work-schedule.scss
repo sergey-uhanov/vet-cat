@@ -1,6 +1,4 @@
-
 .work-schedule {
-
   &__title {
     font-weight: 700;
     font-size: 48px;
@@ -8,9 +6,7 @@
     margin-bottom: 46px;
 
     @include media-breakpoint-down(lg) {
-      font-size: calc(
-              22px + (48 - 22) * ((100vw - 375px) / (1620 - 375))
-      );;
+      font-size: calc(22px + (48 - 22) * ((100vw - 375px) / (1620 - 375)));
     }
   }
 
@@ -34,7 +30,7 @@
     padding-top: 63px;
     padding-bottom: 77px;
 
-    &_full-width{
+    &_full-width {
       justify-content: space-between;
       padding-bottom: 58px;
     }
@@ -42,28 +38,20 @@
     @include media-breakpoint-down(lg) {
       column-gap: 0;
 
-      padding-top: calc(
-              22px + (63 - 22) * ((100vw - 375px) / (1620 - 375))
-      );
-      padding-bottom: calc(
-              22px + (77 - 22) * ((100vw - 375px) / (1620 - 375))
-      );
+      padding-top: calc(22px + (63 - 22) * ((100vw - 375px) / (1620 - 375)));
+      padding-bottom: calc(22px + (77 - 22) * ((100vw - 375px) / (1620 - 375)));
     }
-
   }
-
-
 }
 
 .item-service {
   padding-bottom: 40px;
   user-select: none;
 
-
   &__sidebar {
     max-width: 264px;
     min-width: 264px;
-    
+
     @include media-breakpoint-down(sm) {
       min-width: 200px;
     }
@@ -73,13 +61,13 @@
     }
   }
 
-  &__icon-location{
+  &__icon-location {
     width: 28px;
     height: 28px;
     min-width: 28px;
   }
 
-  &__location{
+  &__location {
     font-weight: 700;
     font-size: 30px;
     line-height: 1.16;
@@ -121,9 +109,7 @@
     line-height: 1.17;
     margin-bottom: 6px;
     @include media-breakpoint-down(lg) {
-      font-size: calc(
-              12px + (17 - 12) * ((100vw - 375px) / (1620 - 375))
-      );
+      font-size: calc(12px + (17 - 12) * ((100vw - 375px) / (1620 - 375)));
     }
   }
 
@@ -198,14 +184,13 @@
     display: flex;
     align-items: center;
 
-    &_alt-r{
+    &_alt-r {
       right: 0;
     }
 
     @include media-breakpoint-down(l) {
       right: 0;
     }
-
 
     &.swiper-button-disabled {
       opacity: 0;
@@ -220,19 +205,18 @@
 }
 
 .slide {
-
   &__date-wrapper {
     height: 72px;
   }
 
-  &__date-day{
+  &__date-day {
     margin-right: 6px;
 
     @include media-breakpoint-down-equal(sm) {
       margin-right: 0;
       display: block;
       width: 100%;
-     margin-left: 10px;
+      margin-left: 10px;
     }
   }
 
@@ -261,7 +245,7 @@
     display: block;
     margin-bottom: 6px;
 
-    &_weekend{
+    &_weekend {
       color: red;
     }
 

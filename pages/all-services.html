@@ -1,41 +1,40 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <link rel="preload" href="src/styles/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="src/styles/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="src/styles/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <head>
+    <link rel="preload" href="src/styles/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="src/styles/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="src/styles/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin />
 
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/src/styles/all-services.scss"/>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/all-services.scss" />
     <title>Все услуги</title>
-</head>
-<body>
-{{> ui/dark-back}}
-
-<div class="wrapper">
-    {{> base/header}}
-    {{> base/sidebar}}
-
-    <main class="main">
-       <div class="container">
-           {{> ui/breadcrumbs itemText1="Наши услуги" itemUrl1="#"}}
-           <h1 class="main-title">Услуги клиники</h1>
-
-           {{> pages/all-services/banner }}
-
-           {{> pages/all-services/list-services }}
+  </head>
+  <body>
+    {{> ui/dark-back}}
 
 
-       </div>
+    <div class="wrapper">
+      {{> base/header}}
+      {{> base/sidebar}}
 
 
-    </main>
-    {{> base/footer}}
+      <main class="main">
+        <div class="container">
+          {{> ui/breadcrumbs itemText1="Наши услуги" itemUrl1="#"}}
+          <h1 class="main-title">Услуги клиники</h1>
 
-    {{> sprite/base-sprite}}
-</div>
-<script type="module" src="/src/js/all-services.js"></script>
-</body>
+          {{> pages/all-services/banner}}
+
+          {{> pages/all-services/list-services}}
+
+        </div>
+      </main>
+      {{> base/footer}}
+
+      {{> sprite/base-sprite}}
+    </div>
+    <script type="module" src="/src/js/all-services.js"></script>
+  </body>
 </html>

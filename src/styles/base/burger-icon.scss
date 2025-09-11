@@ -48,9 +48,9 @@
     top: 0;
     box-shadow: 0 10px 0 $black;
     transition:
-            box-shadow 0.3s 0.15s,
-            top 0.3s 0.15s,
-            transform 0.3s;
+      box-shadow 0.3s 0.15s,
+      top 0.3s 0.15s,
+      transform 0.3s;
 
     @include media-breakpoint-down-equal(md) {
       box-shadow: 0 9px 0 $black;
@@ -64,8 +64,8 @@
   &::after {
     bottom: 0;
     transition:
-            bottom 0.3s 0.15s,
-            transform 0.3s;
+      bottom 0.3s 0.15s,
+      transform 0.3s;
 
     @include media-breakpoint-down-equal(md) {
       height: 2px;
@@ -82,9 +82,9 @@
       transform: rotate(45deg);
       box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
       transition:
-              box-shadow 0.15s,
-              top 0.3s,
-              transform 0.3s 0.15s;
+        box-shadow 0.15s,
+        top 0.3s,
+        transform 0.3s 0.15s;
 
       @include media-breakpoint-down-equal(md) {
         box-shadow: 0 4px 0 rgba(0, 0, 0, 0);
@@ -101,8 +101,8 @@
       bottom: 10px;
       transform: rotate(-45deg);
       transition:
-              bottom 0.3s,
-              transform 0.3s 0.15s;
+        bottom 0.3s,
+        transform 0.3s 0.15s;
 
       @include media-breakpoint-down-equal(md) {
         bottom: 8px;

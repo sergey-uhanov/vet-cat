@@ -5,5 +5,5 @@ export default {
   open: false,
   watch: {
     ignored: /(^|[\/\\])\../,
-  }
+  },
 }

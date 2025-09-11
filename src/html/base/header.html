@@ -1,44 +1,42 @@
 <header class="header">
-    <div class="header__logo-wrapper">
-        <a href="/vet-cat">
-            <picture>
-                <source srcset="/img/header/logo.webp" type="image/webp">
-                <img class="header__logo" src="/img/header/logo.png" width="218" height="56" alt="logo">
-            </picture>
-        </a>
+  <div class="header__logo-wrapper">
+    <a href="/vet-cat">
+      <picture>
+        <source srcset="/img/header/logo.webp" type="image/webp" />
+        <img class="header__logo" src="/img/header/logo.png" width="218" height="56" alt="logo" />
+      </picture>
+    </a>
+  </div>
+
+  <div class="header__burger">
+    <button class=" burger-icon" aria-label="open menu" type="button"></button>
+  </div>
+
+  <div class="header__search">
+    {{> ui/input class="input__search-input" placeholder="Поиск по сайту" name="search-input"}}
+
+    {{> base/svg-manager svg-manager-id="search" svg-manager-class="header__search-icon"}}
+
+    {{> base/svg-manager svg-manager-id="close" svg-manager-class="header__search-close"}}
+
+  </div>
+  <div class="header__search-icon-wrapper">
+    {{> base/svg-manager svg-manager-id="search" svg-manager-class="header__icon-search-icon"}}
+  </div>
+  <div class="header__address-block">
+    <div class="header__address">
+      <span>Одесса, Чкалова д. 57/5</span>
+      Приморский район
     </div>
 
-    <div class="header__burger">
-        <button class=" burger-icon" aria-label="open menu" type="button"></button>
+    <div class="header__address">
+      <span>Одесса, Заболотного д.21/1</span>
+      Суворовский район
     </div>
+  </div>
 
-    <div class="header__search">
-        {{> ui/input class="input__search-input" placeholder="Поиск по сайту" name="search-input"}}
-
-        {{> base/svg-manager svg-manager-id="search" svg-manager-class="header__search-icon"}}
-
-        {{> base/svg-manager svg-manager-id="close" svg-manager-class="header__search-close"}}
-
-    </div>
-    <div class="header__search-icon-wrapper">
-        {{> base/svg-manager svg-manager-id="search" svg-manager-class="header__icon-search-icon"}}
-    </div>
-    <div class="header__address-block">
-        <div class="header__address">
-            <span>Одесса, Чкалова д. 57/5</span>
-            Приморский район
-        </div>
-
-        <div class="header__address">
-            <span>Одесса, Заболотного д.21/1</span>
-            Суворовский район
-        </div>
-    </div>
-
-    <div class="header__contacts">
-        <a class="header__number-phone" href="tel:+38 (067) 123-45-67">
-            +38 (097) 110-23-03
-        </a>
-        <button class="header__call-back ">Заказать звонок</button>
-    </div>
+  <div class="header__contacts">
+    <a class="header__number-phone" href="tel:+38 (067) 123-45-67"> +38 (097) 110-23-03 </a>
+    <button class="header__call-back ">Заказать звонок</button>
+  </div>
 </header>

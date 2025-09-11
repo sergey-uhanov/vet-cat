@@ -14,13 +14,9 @@
   padding-bottom: 128px;
 
   @include media-breakpoint-down-equal(lg) {
-    padding-top: calc(
-            28px + (54 - 28) * ((100vw - 375px) / (1620 - 375))
-    );
+    padding-top: calc(28px + (54 - 28) * ((100vw - 375px) / (1620 - 375)));
 
-    padding-bottom: calc(
-            28px + (54 - 28) * ((100vw - 375px) / (1620 - 375))
-    );
+    padding-bottom: calc(28px + (54 - 28) * ((100vw - 375px) / (1620 - 375)));
   }
 
   &__title {
@@ -30,9 +26,7 @@
     margin-bottom: 54px;
 
     @include media-breakpoint-down(lg) {
-      font-size: calc(
-              28px + (48 - 28) * ((100vw - 375px) / (1620 - 375))
-      );
+      font-size: calc(28px + (48 - 28) * ((100vw - 375px) / (1620 - 375)));
     }
   }
 
@@ -48,7 +42,7 @@
 
   &__content {
     display: grid;
-    grid-template-columns:minmax(400px, 728px) minmax(320px, 344px);
+    grid-template-columns: minmax(400px, 728px) minmax(320px, 344px);
     column-gap: 40px;
 
     @include media-breakpoint-down-equal(md) {
@@ -94,13 +88,13 @@
     }
 
     &_first:after {
-      content: "1";
-      @extend %number
+      content: '1';
+      @extend %number;
     }
 
     &_second:after {
-      content: "2";
-      @extend %number
+      content: '2';
+      @extend %number;
     }
   }
 

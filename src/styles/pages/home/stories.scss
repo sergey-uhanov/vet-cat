@@ -22,12 +22,9 @@
     max-width: 785px;
 
     @include media-breakpoint-down-equal(md) {
-      font-size: calc(
-              30px + (48 - 30) * ((100vw - 375px) / (1620 - 375))
-      );
+      font-size: calc(30px + (48 - 30) * ((100vw - 375px) / (1620 - 375)));
     }
   }
-
 
   &__link {
     border-radius: 16px;
@@ -52,17 +49,16 @@
     }
   }
 
-  &__cat-wrapper{
+  &__cat-wrapper {
     max-width: 436px;
     aspect-ratio: 1.887/1;
     margin: 8px auto 0 auto;
 
     @include media-breakpoint-down-equal(xs) {
-
     }
   }
 
-  &__cat-img{
+  &__cat-img {
     width: 100%;
     height: 100%;
     object-fit: contain;

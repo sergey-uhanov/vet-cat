@@ -3,9 +3,7 @@
   padding-top: 113px;
 
   @include media-breakpoint-down(l) {
-    padding-top: calc(
-            20px + (113 - 20) * ((100vw - 375px) / (1920 - 375))
-    );
+    padding-top: calc(20px + (113 - 20) * ((100vw - 375px) / (1920 - 375)));
   }
 
   &__background {
@@ -15,7 +13,9 @@
     width: 100%;
     aspect-ratio: 2.92/1;
     background-image: url('/img/home/puppy.webp'), $logo-bg;
-    background-position: right center, center;
+    background-position:
+      right center,
+      center;
     background-size: contain, auto;
     background-repeat: no-repeat;
     z-index: -1;
@@ -31,7 +31,7 @@
     @include media-breakpoint-down-equal(lg) {
       aspect-ratio: 2/1;
     }
-    
+
     @include media-breakpoint-down(sm) {
       aspect-ratio: 2/1;
     }
@@ -43,7 +43,6 @@
     @include media-breakpoint-down-equal(xxs) {
       aspect-ratio: 1.3/1;
     }
-
 
     &:before {
       content: '';
@@ -70,15 +69,10 @@
     z-index: 10;
 
     @include media-breakpoint-down(l) {
-      font-size: calc(
-              20px + (64 - 20) * ((100vw - 375px) / (1920 - 375))
-      );
+      font-size: calc(20px + (64 - 20) * ((100vw - 375px) / (1920 - 375)));
 
-      margin-bottom: calc(
-              20px + (33 - 20) * ((100vw - 375px) / (1920 - 375))
-      );
+      margin-bottom: calc(20px + (33 - 20) * ((100vw - 375px) / (1920 - 375)));
     }
-
 
     @include media-breakpoint-down-equal(md) {
       color: $black;
@@ -106,9 +100,7 @@
     position: relative;
 
     @include media-breakpoint-down(l) {
-      font-size: calc(
-              14px + (20 - 14) * ((100vw - 375px) / (1920 - 375))
-      );
+      font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
     }
 
     @include media-breakpoint-down-equal(lg) {
@@ -128,7 +120,6 @@
       position: absolute;
       left: -16px;
       top: 15px;
-
 
       @include media-breakpoint-down(l) {
         top: 10px;
@@ -152,9 +143,7 @@
     }
 
     @include media-breakpoint-down(l) {
-      height: calc(
-              50px + (93 - 50) * ((100vw - 375px) / (1920 - 375))
-      );
+      height: calc(50px + (93 - 50) * ((100vw - 375px) / (1920 - 375)));
       bottom: -20px;
     }
 

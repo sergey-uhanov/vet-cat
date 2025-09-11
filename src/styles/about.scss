@@ -1,0 +1,29 @@
+@import '@/styles/base/global';
+@import '@/styles/ui/button';
+@import '@/styles/ui/breadcrumbs';
+@import '@/styles/ui/selection-button-group';
+@import '@/styles/pages/stories/tubs';
+@import '@/styles/pages/about/about-tubs';
+@import '@/styles/pages/about/gallery';
+@import '@/styles/pages/about/feedback';
+@import '@/styles/pages/expert/feedback';
+@import '@/styles/pages/about/our-mission';
+@import '@/styles/widgets/triple-sleder';
+
+.container-about {
+  max-width: 1222px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(l) {
+    max-width: 1045px;
+  }
+}
+
+.main {
+  background: $logo-bg;
+}
+
+.breadcrumbs-wrapper {
+  margin-left: 40px;
+}

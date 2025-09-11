@@ -12,12 +12,8 @@
   position: relative;
 
   @include media-breakpoint-down(l) {
-    margin-top:  calc(
-            50px + (163 - 50) * ((100vw - 375px) / (1620 - 375))
-    );
-    padding-bottom:  calc(
-            50px + (104 - 50) * ((100vw - 375px) / (1620 - 375))
-    );
+    margin-top: calc(50px + (163 - 50) * ((100vw - 375px) / (1620 - 375)));
+    padding-bottom: calc(50px + (104 - 50) * ((100vw - 375px) / (1620 - 375)));
   }
 
   @include media-breakpoint-down-equal(md) {
@@ -31,16 +27,14 @@
     margin-bottom: 38px;
 
     @include media-breakpoint-down(l) {
-      font-size: calc(
-                      24px + (48 - 24) * ((100vw - 375px) / (1620 - 375))
-      );
+      font-size: calc(24px + (48 - 24) * ((100vw - 375px) / (1620 - 375)));
     }
   }
 
-&__collage-wrapper{
-  position: relative;
-  z-index: 1;
-}
+  &__collage-wrapper {
+    position: relative;
+    z-index: 1;
+  }
 
   &__collage {
     max-width: 536px;
@@ -58,7 +52,7 @@
     aspect-ratio: 1/1;
 
     img {
-      @extend %img
+      @extend %img;
     }
   }
 
@@ -73,7 +67,7 @@
     flex-direction: column;
 
     img {
-      @extend %img
+      @extend %img;
     }
   }
 
@@ -107,20 +101,18 @@
     height: 28px;
   }
 
-  &__row-icon{
+  &__row-icon {
     width: 17px;
     height: 8px;
   }
 
-  &__img-wrapper{
+  &__img-wrapper {
     position: absolute;
     right: 35%;
     transform: translateX(78%);
     top: -126px;
     z-index: 0;
-    max-width: calc(
-            500px + (818 - 500) * ((100vw - 375px) / (4000 - 1620))
-    );
+    max-width: calc(500px + (818 - 500) * ((100vw - 375px) / (4000 - 1620)));
     width: 100%;
     aspect-ratio: 1.466/1;
 
@@ -142,21 +134,20 @@
     @include media-breakpoint-down-equal(md) {
       max-width: 400px;
       top: 0;
-      right: -100px
+      right: -100px;
     }
 
     @include media-breakpoint-down-equal(sm) {
       display: none;
     }
 
-    img{
+    img {
       width: 100%;
       height: 100%;
-
     }
   }
 
-  &__heart-large-icon{
+  &__heart-large-icon {
     width: 173px;
     height: 164px;
     position: absolute;
@@ -164,7 +155,7 @@
     bottom: 134px;
   }
 
-  &__heart-big-icon{
+  &__heart-big-icon {
     width: 98px;
     height: 94px;
     position: absolute;
@@ -173,7 +164,7 @@
     transform: rotate(30deg);
   }
 
-  &__heart-mid-icon{
+  &__heart-mid-icon {
     width: 51px;
     height: 51px;
     position: absolute;
@@ -182,7 +173,7 @@
     transform: rotate(30deg);
   }
 
-  &__heart-small-icon{
+  &__heart-small-icon {
     width: 31px;
     height: 31px;
     position: absolute;
@@ -191,4 +182,3 @@
     transform: rotate(-30deg);
   }
 }
-

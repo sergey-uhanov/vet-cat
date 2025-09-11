@@ -1,7 +1,7 @@
 export function renderSmallImgCard(data) {
-    const base = process.env.NODE_ENV === 'production' ? '/vet-cat/' : '/'
+  const base = process.env.NODE_ENV === 'production' ? '/vet-cat/' : '/'
 
-    return ` <a class="swiper-slide small-img-card" href="#">
+  return ` <a class="swiper-slide small-img-card" href="#">
                     <div class="small-img-card__img-wrapper">
                         <picture>
                             <source srcset="${base}img/home/${data.linkWebp}" type="image/webp">

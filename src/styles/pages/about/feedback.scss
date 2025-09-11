@@ -1,0 +1,31 @@
+.feed-back {
+  &__title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 68px;
+    padding-bottom: 48px;
+
+    @include media-breakpoint-down-equal(sm) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.38;
+  }
+
+  &__button-wrapper {
+    max-width: 174px;
+    width: 100%;
+  }
+}
+
+.fancybox__slide .f-button[data-fancybox-close] {
+  color: black;
+  top: 5px !important;
+  right: 5px !important;
+}

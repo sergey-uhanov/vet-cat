@@ -1,5 +1,4 @@
 .employees-tubs {
-
   &__title {
     font-weight: 700;
     font-size: 48px;
@@ -24,7 +23,7 @@
     line-height: 1.38;
   }
 
-  &__switch-button{
+  &__switch-button {
     width: 324px;
     position: relative;
     top: 5px;
@@ -63,6 +62,5 @@
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-
   }
 }

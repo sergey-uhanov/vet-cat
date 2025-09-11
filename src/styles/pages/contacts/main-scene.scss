@@ -1,5 +1,4 @@
 .main-scene {
-
   &__title {
     font-weight: 700;
     font-size: 48px;
@@ -21,7 +20,7 @@
     }
   }
 
-  &__text-block{
+  &__text-block {
     width: 326px;
 
     @include media-breakpoint-down(xxs) {
@@ -68,12 +67,10 @@
   &__address-card-wrapper {
     position: relative;
   }
-
 }
 
 .address-card {
   position: absolute;
-
 
   &_hidden {
     opacity: 0;
@@ -85,7 +82,8 @@
     margin-bottom: 8px;
   }
 
-  &__address, &__description {
+  &__address,
+  &__description {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;

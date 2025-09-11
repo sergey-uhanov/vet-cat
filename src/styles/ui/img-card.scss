@@ -1,17 +1,17 @@
 .img-card {
   max-width: 344px;
 
-  @media (hover:hover) {
-    &:hover{
-      .img-card__hover-information{
+  @media (hover: hover) {
+    &:hover {
+      .img-card__hover-information {
         transform: translateY(0);
       }
 
-      .img-card__full-name{
+      .img-card__full-name {
         color: $green;
       }
 
-      .img-card__position{
+      .img-card__position {
         color: $green;
       }
     }
@@ -58,7 +58,7 @@
     align-items: center;
     padding: 17px 24px 23px 24px;
     transform: translateY(100%);
-    transition: transform .3s;
+    transition: transform 0.3s;
   }
 
   &__hover-text {
@@ -86,7 +86,7 @@
       left: -6px;
       height: 30px;
       width: 1px;
-      background:  $grani;
+      background: $grani;
     }
   }
 }

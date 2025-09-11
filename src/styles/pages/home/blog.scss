@@ -21,9 +21,7 @@
     max-width: 730px;
 
     @include media-breakpoint-down-equal(md) {
-      font-size: calc(
-              30px + (48 - 30) * ((100vw - 375px) / (1620 - 375))
-      );
+      font-size: calc(30px + (48 - 30) * ((100vw - 375px) / (1620 - 375)));
     }
   }
 

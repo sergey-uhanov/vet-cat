@@ -17,9 +17,10 @@
   user-select: none;
   line-height: 1.2;
   width: 100%;
-  transition: background 0.3s,
-  color 0.3s,
-  border-color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    border-color 0.3s;
 
   &__inner {
     position: relative;
@@ -60,32 +61,31 @@
   }
 
   &_list-item {
-
+    color: $font-color;
     height: 40px;
     padding: 0 16px;
     background: $fon3;
     border-radius: 4px;
     cursor: pointer;
-    transition: color 0.2s ;
+    transition: color 0.2s;
 
     @media (hover: hover) {
-      &:hover{
+      &:hover {
         color: $light-green;
       }
     }
 
-    &-active{
+    &-active {
       background: $green;
       color: $white;
 
       @media (hover: hover) {
-        &:hover{
+        &:hover {
           color: $white;
         }
       }
     }
   }
-
 
   &_disabled {
     background: $light-gray;

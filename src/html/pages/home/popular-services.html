@@ -1,29 +1,27 @@
 <section class="popular-services">
-    <div class="container">
-        <div class="popular-services__title-block">
-            <h2 class="popular-services__title">Популярные услуги
-                для ваших питомцев
-            </h2>
+  <div class="container">
+    <div class="popular-services__title-block">
+      <h2 class="popular-services__title">Популярные услуги для ваших питомцев</h2>
 
-            <div class="popular-services__button-block">
-                <a class="popular-services__button-service" href="#">Смотреть все цены</a>
-                <a class="popular-services__button-price" href="#">Смотреть все услуги</a>
-            </div>
-        </div>
+      <div class="popular-services__button-block">
+        <a class="popular-services__button-service" href="#">Смотреть все цены</a>
+        <a class="popular-services__button-price" href="#">Смотреть все услуги</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-slider">
+    <div class="service-slider triple-slider triple-slider_services swiper">
+      <div class=" triple-slider__wrapper swiper-wrapper"></div>
     </div>
 
-    <div class="container-slider">
-        <div class="service-slider triple-slider triple-slider_services swiper">
-            <div class=" triple-slider__wrapper swiper-wrapper"></div>
-        </div>
+    <div class="triple-slider__button-prev">
+      {{> base/svg-manager svg-manager-id="row" svg-manager-class="triple-slider__button-prev-icon triple-slider__button-prev-icon_service"}}
 
-        <div class="triple-slider__button-prev">
-            {{> base/svg-manager svg-manager-id="row" svg-manager-class="triple-slider__button-prev-icon triple-slider__button-prev-icon_service"}}
-
-        </div>
-
-        <div class="triple-slider__button-next">
-            {{> base/svg-manager svg-manager-id="row" svg-manager-class="triple-slider__button-next-icon triple-slider__button-next-icon_service"}}
-        </div>
     </div>
+
+    <div class="triple-slider__button-next">
+      {{> base/svg-manager svg-manager-id="row" svg-manager-class="triple-slider__button-next-icon triple-slider__button-next-icon_service"}}
+    </div>
+  </div>
 </section>

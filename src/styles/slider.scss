@@ -1,5 +1,4 @@
 .slider {
-
   width: 400px;
   border: 1px solid grey;
   overflow: hidden;
@@ -15,7 +14,8 @@
     gap: 1rem;
   }
 
-  &__next, &__prev {
+  &__next,
+  &__prev {
     font-size: 36px;
   }
 }

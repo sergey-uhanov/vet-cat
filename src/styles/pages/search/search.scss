@@ -1,0 +1,50 @@
+.search {
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.16;
+    margin-bottom: 38px;
+  }
+
+  &__quantity-search {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.38;
+    color: $font-color;
+    margin-top: 20px;
+    margin-bottom: 48px;
+  }
+
+  &__not-found {
+    font-size: 26px;
+    line-height: 1.38;
+    font-weight: 700;
+  }
+}
+
+.item-result {
+  display: block;
+  border-top: 1px solid $grani;
+  padding-top: 12px;
+
+  &__type {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+    color: $grey;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.64;
+    margin-bottom: 33px;
+  }
+}

@@ -1,0 +1,114 @@
+.f-counter {
+  display: none !important;
+}
+
+.f-panzoom__viewport {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.gallery {
+  &__content {
+    padding-top: 64px;
+    padding-bottom: 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    @include media-breakpoint-down-equal(sm) {
+      gap: 16px;
+    }
+
+    @include media-breakpoint-down-equal(xs) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    max-width: 536px;
+    aspect-ratio: 2.03/1;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px 0 rgba(26, 57, 63, 0.1);
+    overflow: hidden;
+
+    @media (hover: hover) {
+      &:hover {
+        .gallery__slide-text {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  &__img-wrapper {
+    max-width: 264px;
+    aspect-ratio: 1/1;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__slide-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 28px;
+    margin-left: 28px;
+    transition: color 0.3s;
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: $text3;
+    }
+
+    @include media-breakpoint-down-equal(sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__icon-location {
+    width: 16px;
+    height: 16px;
+    fill: #086358;
+  }
+}
+
+.f-caption {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  z-index: 10;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.fixed-gallery-caption {
+  position: fixed; /* Фиксирует относительно окна */
+  top: 20px; /* Отступ от верха экрана */
+  left: 50%; /* По центру по горизонтали */
+  transform: translateX(-50%);
+
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  z-index: 1000000000000; /* Поверх всех элементов */
+  pointer-events: none;
+  white-space: nowrap;
+
+  svg {
+    fill: #fff;
+  }
+}

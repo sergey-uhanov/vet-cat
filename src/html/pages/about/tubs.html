@@ -1,0 +1,21 @@
+<section class="tubs">
+  <div class="container-about">
+    <h1 class="tubs__title tubs__title_ml">Ветеренарный центр «ВетКэт»</h1>
+
+    <div class="tubs__buttons tubs__buttons_ml">
+      {{> ui/selection-button-group button-attribute1="Наша миссия" button1="Наша миссия"
+        button-attribute2="Фотогалерея"
+        button2="Фотогалерея" button-attribute3="Отзывы"
+        button3="Отзывы"
+      }}
+    </div>
+  </div>
+
+  <div class="about-tubs">
+    {{> pages/about/our-mission}}
+
+    {{> pages/about/gallery}}
+
+    {{> pages/about/feedback}}
+  </div>
+</section>

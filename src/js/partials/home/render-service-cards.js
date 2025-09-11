@@ -1,11 +1,11 @@
-import {getElement} from "@/js/composables/dom-manipulator.js";
+import { getElement } from '@/js/composables/dom-manipulator.js'
 
 export function renderServiceCards(data) {
-    const sliderContainer = getElement('.service-slider')
-    const wrapper = getElement('.swiper-wrapper', sliderContainer)
+  const sliderContainer = getElement('.service-slider')
+  const wrapper = getElement('.swiper-wrapper', sliderContainer)
 
-    data.forEach(element => {
-        const card = `
+  data.forEach(element => {
+    const card = `
                              <div class=" triple-slider__slide simple-card swiper-slide">
                                 <div class="simple-card__title">${element.title}</div>
                                 <div class="simple-card__text">${element.text}
@@ -17,7 +17,6 @@ export function renderServiceCards(data) {
                                 </a>
                             </div>`
 
-        wrapper.insertAdjacentHTML('beforeend', card);
-    })
-
+    wrapper.insertAdjacentHTML('beforeend', card)
+  })
 }

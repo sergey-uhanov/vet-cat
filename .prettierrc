@@ -16,14 +16,10 @@
   "useTabs": false,
   "goTemplateBracketSpacing": false,
   "goTemplatePreserveNewLines": false,
-  "plugins": [
-    "prettier-plugin-go-template"
-  ],
+  "plugins": ["prettier-plugin-go-template"],
   "overrides": [
     {
-      "files": [
-        "*.html"
-      ],
+      "files": ["*.html"],
       "options": {
         "parser": "go-template"
       }

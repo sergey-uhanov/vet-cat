@@ -26,7 +26,6 @@
     line-height: 1.16;
     margin-left: 134px;
 
-
     @include media-breakpoint-down-equal(sm) {
       font-size: 36px;
       margin-left: 0;
@@ -50,7 +49,6 @@
       align-items: center;
     }
   }
-
 
   &__text-section {
     display: flex;
@@ -95,7 +93,7 @@
       position: relative;
 
       &:after {
-        content: "2";
+        content: '2';
         font-weight: $--700;
         font-size: 30px;
         line-height: 1.16;
@@ -134,9 +132,7 @@
     margin-bottom: 106px;
 
     @include media-breakpoint-down-equal(md) {
-      margin-bottom: calc(
-              30px + (106 - 30) * ((100vw - 375px) / (1620 - 375))
-      );;
+      margin-bottom: calc(30px + (106 - 30) * ((100vw - 375px) / (1620 - 375)));
     }
   }
 

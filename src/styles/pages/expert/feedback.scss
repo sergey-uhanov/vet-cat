@@ -1,10 +1,23 @@
 .feedback {
   padding: 67px 0 113px 0;
 
-  &__content{
+  &__content {
     display: flex;
     justify-content: space-between;
     gap: 28px;
+    flex-wrap: wrap;
+
+    &_wide {
+      gap: 40px;
+
+      @include media-breakpoint-down-equal(l) {
+        column-gap: 90px;
+      }
+
+      @include media-breakpoint-down-equal(md) {
+        gap: 52px;
+      }
+    }
 
     @include media-breakpoint-down-equal(sm) {
       flex-direction: column;
@@ -44,13 +57,19 @@
   }
 }
 
-.feedback-card{
+.feedback-card {
   background: $white;
   padding: 27px 32px;
   border-radius: 16px;
-  max-width: 728px;
+  flex: 1 1 344px;
+  min-width: 344px;
+  box-shadow: 0 4px 20px 0 rgba(26, 57, 63, 0.1);
 
-  &_short{
+  @include media-breakpoint-down-equal(sm) {
+    flex: 0;
+  }
+
+  &_short {
     max-width: 344px;
 
     @include media-breakpoint-down-equal(sm) {
@@ -58,42 +77,55 @@
     }
   }
 
-  &__name{
+  &__name {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 16px;
   }
 
-  &__text{
+  &__text {
     font-weight: 400;
     font-size: 17px;
     line-height: 1.64;
     margin-bottom: 18px;
-    @include multiLineTruncate(5)
+    @include multiLineTruncate(5);
   }
 
-  &__footer{
+  &__footer {
     display: flex;
     justify-content: space-between;
   }
 
-  &__link{
+  &__link {
+    background: transparent;
     display: flex;
     align-items: center;
     color: $green;
     gap: 8px;
   }
 
-  &__row-icon{
+  &__row-icon {
     width: 19px;
     height: 10px;
   }
 
-  &__date{
+  &__date {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.42857;
     color: $text3;
+  }
+
+  &__text-dialog {
+    @include media-breakpoint-down-equal(xs) {
+      font-size: 12px;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
   }
 }

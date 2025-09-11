@@ -71,15 +71,15 @@
     flex: 1;
     background: $white;
     @include singleLineTruncate();
-    transition: background 0.3s, color 0.3s;
-
+    transition:
+      background 0.3s,
+      color 0.3s;
 
     @media (hover: hover) {
       &:hover {
         color: $light-green;
       }
     }
-
 
     @include media-breakpoint-down-equal(xs) {
       padding: 9px 15px;
@@ -107,7 +107,7 @@
 
     @media (hover: hover) {
       &:hover {
-        background:  #2bd9bc;
+        background: #2bd9bc;
       }
     }
 

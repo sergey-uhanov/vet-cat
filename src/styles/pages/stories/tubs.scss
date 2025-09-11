@@ -1,27 +1,37 @@
 .tubs {
-
-
   &__cards-wrapper {
     background: $white;
   }
 
-  &__title{
+  &__title {
     font-weight: 700;
     font-size: 48px;
     line-height: 1.16;
     margin-bottom: 46px;
+
+    &_ml {
+      margin-left: 40px;
+    }
 
     @include media-breakpoint-down-equal(sm) {
       font-size: 32px;
     }
   }
 
-  &__buttons{
+  &__buttons {
     width: fit-content;
     margin-bottom: 24px;
+
+    &_ml {
+      margin-left: 40px;
+
+      @include media-breakpoint-down-equal(sm) {
+        margin-left: 0;
+      }
+    }
   }
 
-  &__cards-wrapper{
+  &__cards-wrapper {
     padding-top: 64px;
     padding-bottom: 160px;
   }
@@ -47,19 +57,17 @@
       max-width: 50%;
       min-width: 200px;
     }
-    
+
     @include media-breakpoint-down-equal(xs) {
       max-width: 100%;
     }
   }
 
-
-@include media-breakpoint-up-equal(md) {
-  &__cards .small-img-card:nth-child(7n + 1),
-  &__cards .small-img-card:nth-child(7n + 2),
-  &__cards .small-img-card:nth-child(7n + 3) {
-    flex-basis: calc((100% - 2 * var(--gap)) / 3);
+  @include media-breakpoint-up-equal(md) {
+    &__cards .small-img-card:nth-child(7n + 1),
+    &__cards .small-img-card:nth-child(7n + 2),
+    &__cards .small-img-card:nth-child(7n + 3) {
+      flex-basis: calc((100% - 2 * var(--gap)) / 3);
+    }
   }
 }
-}
-

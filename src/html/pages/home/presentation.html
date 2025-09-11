@@ -1,44 +1,49 @@
 <section class="presentation">
-    <div class="presentation__container">
-        <div class="presentation__title">ВетКэт — это</div>
-        <div class="presentation__content">
-            <div class="presentation__text-section">
-                <div class="presentation__lines">
-                    <span class="presentation__line"></span>
-                    <span class="presentation__line presentation__line_active"></span>
-                    <span class="presentation__line"></span>
-                    <span class="presentation__line"></span>
-                </div>
-                <div class="presentation__text">
-                    <div class="presentation__text-title">Круглосуточная
-                        работа
-                    </div>
-                    <div class="presentation__text-description">Здесь говорим о режиме работы клиник
-                        и о консультации в любое время суток. И еще какой-то информативный текст,
-                        чтобы получилось в 3-5 строки.
-                    </div>
-                    {{> ui/button
-                    type="button"
-                    button-class="presentation__button"
-                    button-modifier="fill-color-green"
-                    button-text="Подробнее о компании"
-                    }}
-                </div>
-            </div>
-            <div class="presentation__img-block">
-                {{> base/svg-manager svg-manager-id="broken-circle" svg-manager-class="presentation__broken-circle"}}
-
-                {{> base/svg-manager svg-manager-id="quoter-circle" svg-manager-class="presentation__quoter-circle"}}
-
-                <div class="presentation__background"></div>
-
-            <div class="presentation__img-wrapper">
-                <picture>
-                    <source srcset="/img/home/man.webp" type="image/webp">
-                    <img class="presentation__img" src="/img/home/man.png" alt="photo of man" width="438" height="450" loading="lazy">
-                </picture>
-            </div>
-            </div>
+  <div class="presentation__container">
+    <div class="presentation__title">ВетКэт — это</div>
+    <div class="presentation__content">
+      <div class="presentation__text-section">
+        <div class="presentation__lines">
+          <span class="presentation__line"></span>
+          <span class="presentation__line presentation__line_active"></span>
+          <span class="presentation__line"></span>
+          <span class="presentation__line"></span>
         </div>
+        <div class="presentation__text">
+          <div class="presentation__text-title">Круглосуточная работа</div>
+          <div class="presentation__text-description">
+            Здесь говорим о режиме работы клиник и о консультации в любое время суток. И еще какой-то информативный
+            текст, чтобы получилось в 3-5 строки.
+          </div>
+          {{> ui/button
+            type="button"
+            button-class="presentation__button"
+            button-modifier="fill-color-green"
+            button-text="Подробнее о компании"
+          }}
+        </div>
+      </div>
+      <div class="presentation__img-block">
+        {{> base/svg-manager svg-manager-id="broken-circle" svg-manager-class="presentation__broken-circle"}}
+
+        {{> base/svg-manager svg-manager-id="quoter-circle" svg-manager-class="presentation__quoter-circle"}}
+
+        <div class="presentation__background"></div>
+
+        <div class="presentation__img-wrapper">
+          <picture>
+            <source srcset="/img/home/man.webp" type="image/webp" />
+            <img
+              class="presentation__img"
+              src="/img/home/man.png"
+              alt="photo of man"
+              width="438"
+              height="450"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
     </div>
+  </div>
 </section>

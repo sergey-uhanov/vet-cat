@@ -1,37 +1,37 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <link rel="preload" href="src/styles/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="src/styles/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="src/styles/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <head>
+    <link rel="preload" href="src/styles/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="src/styles/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="src/styles/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin />
 
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/src/styles/work-time.scss"/>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/work-time.scss" />
     <title>График работы</title>
-</head>
-<body>
-{{> ui/dark-back}}
+  </head>
+  <body>
+    {{> ui/dark-back}}
 
-<div class="wrapper">
-    {{> base/header}}
-    {{> base/sidebar}}
 
-    <main class="main">
+    <div class="wrapper">
+      {{> base/header}}
+      {{> base/sidebar}}
+
+
+      <main class="main">
         <div class="container-work-time">
-            {{> ui/breadcrumbs itemText1="График работы" itemUrl1="/vet-cat/pages/work-time.html" }}
+          {{> ui/breadcrumbs itemText1="График работы" itemUrl1="/vet-cat/pages/work-time.html"}}
         </div>
-            {{> pages/work-time/work-schedule}}
+        {{> pages/work-time/work-schedule}}
 
+      </main>
 
+      {{> base/footer}}
 
-    </main>
-
-    {{> base/footer}}
-
-    {{> sprite/base-sprite}}
-</div>
-<script type="module" src="/src/js/work-time.js"></script>
-</body>
+      {{> sprite/base-sprite}}
+    </div>
+    <script type="module" src="/src/js/work-time.js"></script>
+  </body>
 </html>

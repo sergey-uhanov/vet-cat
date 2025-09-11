@@ -52,7 +52,6 @@
   &__inform-block {
     padding: 52px 41px 52px 41px;
     border-top: 1px solid $light-gray;
-
   }
 
   &__inform-title {
@@ -79,14 +78,14 @@
 }
 
 .sidebar-sub-list {
-
   &__list {
     transform: scaleY(0);
     transform-origin: top;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s, transform 0.3s;
-
+    transition:
+      max-height 0.3s,
+      transform 0.3s;
   }
 
   &__title {
@@ -105,7 +104,9 @@
       right: -23px;
       top: 50%;
       transform: rotate(-45deg);
-      transition: transform 0.3s, width 0.3s;
+      transition:
+        transform 0.3s,
+        width 0.3s;
     }
   }
 
@@ -128,8 +129,9 @@
     right: -16px;
     top: 50%;
     transform: rotate(45deg);
-    transition: transform 0.3s, width 0.3s;
-
+    transition:
+      transform 0.3s,
+      width 0.3s;
   }
 
   &__link {
@@ -141,7 +143,6 @@
       }
     }
   }
-
 
   &_active {
     .sidebar-sub-list__list {
@@ -168,4 +169,3 @@
     }
   }
 }
-

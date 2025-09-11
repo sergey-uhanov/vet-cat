@@ -1,7 +1,7 @@
 .breadcrumbs {
   padding: 57px 0 5px 0;
 
-  &_green-bg{
+  &_green-bg {
     background: $logo-bg;
   }
 
@@ -16,9 +16,9 @@
     margin-right: 5px;
     transition: color 0.3s;
 
-    &:not(:last-child){
-      @media (hover:hover) {
-        &:hover{
+    &:not(:last-child) {
+      @media (hover: hover) {
+        &:hover {
           color: $light-green;
         }
       }

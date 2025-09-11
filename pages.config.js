@@ -37,7 +37,14 @@ const pages = [
     name: 'stories',
     path: resolve(__dirname, './pages/stories.html'),
   },
-
+  {
+    name: 'about',
+    path: resolve(__dirname, './pages/about.html'),
+  },
+  {
+    name: 'search',
+    path: resolve(__dirname, './pages/search.html'),
+  },
 ]
 
 export default pages

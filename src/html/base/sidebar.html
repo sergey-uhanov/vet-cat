@@ -1,71 +1,71 @@
 <aside class="sidebar">
-    <ul class="sidebar__list">
-        <li class="sidebar__item">
-            <a class="sidebar__link" href="/vet-cat/pages/all-services.html">Наши услуги</a>
+  <ul class="sidebar__list">
+    <li class="sidebar__item">
+      <a class="sidebar__link" href="/vet-cat/pages/all-services.html">Наши услуги</a>
+    </li>
+
+    <li class="sidebar__item">
+      <a class="sidebar__link" href="/vet-cat/pages/price.html">Стоимость</a>
+    </li>
+
+    <li class="sidebar__item">
+      <a class="sidebar__link" href="/vet-cat/pages/all-employees.html?location=Везде&Expert=Все+специализации"
+        >Сотрудники</a
+      >
+    </li>
+
+    <li class="sidebar__item">
+      <a class="sidebar__link" href="/vet-cat/pages/work-time.html">График работы</a>
+    </li>
+
+    <li class="sidebar__item  sidebar-sub-list">
+      <div class="sidebar-sub-list__title">О клинике <span class="sidebar-sub-list__icon"></span></div>
+      <ul class=" sidebar-sub-list__list">
+        <li class="sidebar-sub-list__item">
+          <a class="sidebar-sub-list__link" href="/vet-cat/pages/about.html?active=Наша+миссия">Наша миссия</a>
         </li>
 
-        <li class="sidebar__item">
-            <a class="sidebar__link" href="/vet-cat/pages/price.html">Стоимость</a>
+        <li class="sidebar-sub-list__item">
+          <a class="sidebar-sub-list__link" href="/vet-cat/pages/about.html?active=Фотогалерея">Фотогалерея</a>
         </li>
 
-        <li class="sidebar__item">
-            <a class="sidebar__link" href="/vet-cat/pages/all-employees.html?location=Везде&Expert=Все+специализации">Сотрудники</a>
+        <li class="sidebar-sub-list__item">
+          <a class="sidebar-sub-list__link" href="/vet-cat/pages/about.html?active=Отзывы">Отзывы</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="sidebar__item sidebar__sub-list  sidebar-sub-list">
+      <div class="sidebar-sub-list__title">Полезное <span class="sidebar-sub-list__icon"></span></div>
+      <ul class=" sidebar-sub-list__list">
+        <li class="sidebar-sub-list__item">
+          <a class="sidebar-sub-list__link" href="/vet-cat/pages/about.html?active=Наша+миссия">Наша миссия</a>
         </li>
 
-        <li class="sidebar__item">
-            <a class="sidebar__link" href="/vet-cat/pages/work-time.html">График работы</a>
+        <li class="sidebar-sub-list__item">
+          <a class="sidebar-sub-list__link" href="/vet-cat/pages/about.html?active=Фотогалерея">Фотогалерея</a>
         </li>
 
-        <li class="sidebar__item  sidebar-sub-list">
-            <div class="sidebar-sub-list__title">О клинике <span class="sidebar-sub-list__icon"></span></div>
-            <ul class=" sidebar-sub-list__list">
-                <li class="sidebar-sub-list__item">
-                    <a class="sidebar-sub-list__link" href="/pages/.html">Наша миссия</a>
-                </li>
-
-                <li class="sidebar-sub-list__item">
-                    <a class="sidebar-sub-list__link" href="/pages/.html">Фотогалерея</a>
-                </li>
-
-                <li class="sidebar-sub-list__item">
-                    <a class="sidebar-sub-list__link" href="/pages/.html">Отзывы</a>
-                </li>
-            </ul>
+        <li class="sidebar-sub-list__item">
+          <a class="sidebar-sub-list__link" href="/vet-cat/pages/about.html?active=Отзывы">Отзывы</a>
         </li>
+      </ul>
+    </li>
 
-        <li class="sidebar__item sidebar__sub-list  sidebar-sub-list">
-            <div class="sidebar-sub-list__title">Полезное <span class="sidebar-sub-list__icon"></span></div>
-            <ul class=" sidebar-sub-list__list">
-                <li class="sidebar-sub-list__item">
-                    <a class="sidebar-sub-list__link" href="/pages/.html">Наша миссия</a>
-                </li>
+    <li class="sidebar__item">
+      <a class="sidebar__link" href="/vet-cat/pages/contacts.html">Контакты</a>
+    </li>
+  </ul>
 
-                <li class="sidebar-sub-list__item">
-                    <a class="sidebar-sub-list__link" href="/pages/.html">Фотогалерея</a>
-                </li>
+  <div class="sidebar__inform-block">
+    <div class="sidebar__inform-title">Работаем для вас</div>
+    <span class="sidebar__inform-subtitle">ежедневно и круглосуточно</span>
 
-                <li class="sidebar-sub-list__item">
-                    <a class="sidebar-sub-list__link" href="/pages/.html">Отзывы</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="sidebar__item">
-            <a class="sidebar__link" href="/vet-cat/pages/contacts.html">Контакты</a>
-        </li>
-    </ul>
-
-    <div class="sidebar__inform-block">
-        <div class="sidebar__inform-title">
-            Работаем для вас
-        </div>
-        <span class="sidebar__inform-subtitle">ежедневно и круглосуточно</span>
-
-        {{> ui/button
-        type="button"
-        button-class="sidebar__inform-button "
-        button-modifier="fill-color-red"
-        button-text=" Записаться на прием"
-        }}
-    </div>
+    {{> ui/button
+      type="button"
+      button-class="sidebar__inform-button "
+      button-modifier="fill-color-red"
+      button-text=" Записаться на прием"
+    }}
+  </div>
 </aside>

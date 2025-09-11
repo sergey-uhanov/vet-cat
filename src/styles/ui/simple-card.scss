@@ -7,15 +7,19 @@
   border-radius: 8px;
   background-color: #dcf2e8;
   color: $black;
-  transition: background-color 0.3s, color 0.3s ;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 
   @media (hover: hover) {
     &:hover {
       background-color: $light-green;
       color: $white;
-      transition: background-color 0.3s, color 0.3s ;
+      transition:
+        background-color 0.3s,
+        color 0.3s;
 
-      .simple-card__link{
+      .simple-card__link {
         opacity: 1;
         pointer-events: auto;
       }
@@ -36,7 +40,7 @@
     @include multiLineTruncate(5);
   }
 
-  &__link{
+  &__link {
     position: absolute;
     bottom: 25px;
     right: 32px;

@@ -1,4 +1,3 @@
-
 function classManipulator(element, action, className, toggleValue = true) {
   if (element && className) {
     const actions = {
@@ -15,7 +14,6 @@ function classManipulator(element, action, className, toggleValue = true) {
   }
 }
 
-
 function getElements(elements, target = document) {
   return target.querySelectorAll(elements)
 }
@@ -25,11 +23,9 @@ function getElement(element, target = document) {
   return target.querySelector(element)
 }
 
-
 function getElementId(element) {
   return document.getElementById(element)
 }
-
 
 function getElementsByClassName(element, target = document) {
   return target.getElementsByClassName(element)
@@ -49,7 +45,6 @@ function renderElement(element, elementsClass = null) {
 
   return domElement
 }
-
 
 function addActiveClass(element, elementsClass, activeClass) {
   const allCards = getElements(elementsClass)

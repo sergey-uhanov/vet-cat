@@ -1,5 +1,4 @@
 .story {
-
   &__title {
     font-weight: 700;
     font-size: 48px;
@@ -52,7 +51,9 @@
     font-weight: 700;
     font-size: 16px;
     border-radius: 16px;
-    transition: background 0.3s, color 0.3s;
+    transition:
+      background 0.3s,
+      color 0.3s;
 
     &_fill {
       background: $green;
@@ -117,5 +118,4 @@
     margin-bottom: 20px;
     padding-left: 24px;
   }
-
 }

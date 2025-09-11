@@ -1,0 +1,11 @@
+.about-tubs {
+  background: $white;
+}
+
+.tub {
+  display: none;
+
+  &_active {
+    display: block;
+  }
+}

@@ -1,6 +1,8 @@
 export function renderImgCart(data) {
-    const base = process.env.NODE_ENV === 'production' ? '/vet-cat/' : '/'
-    return ` <a class="swiper-slide img-card" href="#">
+  const base = process.env.NODE_ENV === 'production' ? '/vet-cat/' : '/'
+  const origin = window.location.origin
+  console.log(base)
+  return ` <a class="swiper-slide img-card" href="${origin}${base}pages/expert.html">
                     <div class="img-card__img-wrapper">
                         <picture>
                             <source srcset="${base}img/home/${data.imgLinkWebp}" type="image/webp">
