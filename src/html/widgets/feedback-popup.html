@@ -1,0 +1,38 @@
+<section class="feedback-popup" id="feedback-popup" style="display:none;">
+  <div class="feedback-popup__title">Оставить отзыв</div>
+  <form class="feedback-form">
+    <p class="feedback-form__dropdown-label">Специалист</p>
+    <div class="feedback-form__custom-dropdown" data-dropdown>
+      <button type="button" class="dropdown__button" aria-haspopup="listbox">Малицкая Валерия Викторовна</button>
+      <ul class="dropdown__list" role="listbox">
+        <li class="dropdown__item" role="Малицкая Валерия Викторовна" data-value="good">Малицкая Валерия Викторовна</li>
+        <li class="dropdown__item" role="Малицкая Валерия Викторовна" data-value="good">Малицкая Валерия Викторовна</li>
+        <li class="dropdown__item" role="Малицкая Валерия Викторовна" data-value="good">Малицкая Валерия Викторовна</li>
+        <li class="dropdown__item" role="Малицкая Валерия Викторовна" data-value="good">Малицкая Валерия Викторовна</li>
+      </ul>
+      <input type="hidden" name="feedback" class="dropdown__input" />
+    </div>
+    <label class="feedback-form__textarea-label">
+      <textarea class="feedback-form__textarea"></textarea>
+    </label>
+    <div class="feedback-form__text">
+      <label for="feedback-name">Ваше имя</label>
+      {{> ui/input class="feedback-form__text-input" name='user-name' id='feedback-name'}}
+    </div>
+
+    <div class="feedback-form__text">
+      <label for="feedback-email">E-mail для ответа <span>не публикуем на сайте</span></label>
+      {{> ui/input class="feedback-form__text-input" name='user-email' id='feedback-email'}}
+    </div>
+    <div class="feedback-form__bottom-block">
+      <label class="custom-checkbox">
+        <input type="checkbox" class="custom-checkbox__input" name="agree" />
+        <span class="custom-checkbox__box"></span>
+        <span class="custom-checkbox__label">Я согласен с<span> условиями обработки персональных данных</span> </span>
+      </label>
+      <div class="feedback-form__button-wrapper">
+        {{> ui/button button-class="feedback-form__button" type="submit" button-modifier="fill-color-green" button-text="Отправить"}}
+      </div>
+    </div>
+  </form>
+</section>

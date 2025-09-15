@@ -1,0 +1,82 @@
+:root {
+  --toast-width: 320px;
+  --toast-gap: 20px;
+  --toast-bg: #0b6623;
+  --text-color: #fff;
+  --radius: 10px;
+  --shadow: 0 8px 24px rgba(2, 8, 23, 0.45);
+}
+
+.toast {
+  position: fixed;
+  width: var(--toast-width);
+  padding: 14px 16px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background: linear-gradient(180deg, var(--toast-bg), #067233 80%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  z-index: 9999;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: Inter, system-ui, sans-serif;
+  transform-origin: left top;
+  will-change: transform, opacity;
+  opacity: 1;
+}
+
+/* Текст и кнопка закрытия */
+.toast__body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.toast__icon {
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.toast__text {
+  flex: 1;
+  overflow: hidden;
+}
+.toast__close {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+}
+
+/* Прогресс-бар (анимируется через transform: scaleX) */
+.toast__progress {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.toast__progress > i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform-origin: left center;
+  transform: scaleX(1);
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.6));
+  will-change: transform;
+}
+
+/* Скрытый по умолчанию (для плавного появления) */
+.toast--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
