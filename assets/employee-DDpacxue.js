@@ -1,0 +1,1 @@
+import{i as e,g as t,d as i}from"./header--BVm7LaD.js";import{i as o}from"./init-slider-CsCEctEP.js";import{f as r}from"./feedback-popup-CFkt-cW7.js";import"./navigation-BLWR7E83.js";document.addEventListener("DOMContentLoaded",async n=>{e(),o(t(".work-schedule__wrapper")),i(),r()});
