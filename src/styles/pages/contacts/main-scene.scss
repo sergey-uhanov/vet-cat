@@ -41,6 +41,8 @@
     width: 100%;
     aspect-ratio: 1.44/1;
     margin-bottom: 3px;
+    position: relative;
+    z-index: 1;
   }
 
   &__description {

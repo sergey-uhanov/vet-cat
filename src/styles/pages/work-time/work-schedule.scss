@@ -149,6 +149,16 @@
     display: flex;
     align-items: center;
 
+    &_expert {
+      @include media-breakpoint-down-equal(xs) {
+        left: 123px;
+      }
+
+      @include media-breakpoint-down-equal(xxs) {
+        left: 123px;
+      }
+    }
+
     @include media-breakpoint-down(l) {
       left: 285px;
     }
@@ -159,6 +169,7 @@
     @include media-breakpoint-down-equal(sm) {
       left: 153px;
     }
+
     @include media-breakpoint-down(xxs) {
       left: 140px;
     }
@@ -183,6 +194,7 @@
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
+    z-index: 10;
 
     &_alt-r {
       right: 0;

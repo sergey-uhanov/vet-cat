@@ -16,9 +16,8 @@ export function selectionButtonGroup() {
   })
 }
 
-export function moveSliderTo(button) {
+export function moveSliderTo(button = activeButton) {
   const { offsetWidth, offsetHeight, offsetLeft, offsetTop } = button
-
   slider.style.width = `${offsetWidth}px`
   slider.style.height = `${offsetHeight}px`
   slider.style.transform = `translate(${offsetLeft}px, ${offsetTop}px)`

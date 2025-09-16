@@ -1,6 +1,8 @@
 import { Fancybox } from '@fancyapps/ui/dist/fancybox/'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
 import { getElement, getElements, renderElement } from '@/js/composables/dom-manipulator.js'
+import { moveSliderTo } from '@/js/ui/selection-button-group.js'
+import { airDatepicker } from '@/js/widgets/appointment-popup/air-datepicker.js'
 
 export function configGallery() {
   const fixedCaptionEl = renderElement('div', 'fixed-gallery-caption')
@@ -34,7 +36,12 @@ export function configGallery() {
           setTimeout(() => {
             const fancybox = getElement('.fancybox__dialog')
             fancybox.append(fixedCaptionEl)
-          }, 0)
+            airDatepicker()
+          }, 1000)
+
+          setTimeout(() => {
+            moveSliderTo()
+          }, 100)
         },
         destroy: fancybox => {
           fixedCaptionEl.textContent = ''

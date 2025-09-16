@@ -61,11 +61,14 @@
     <div class="sidebar__inform-title">Работаем для вас</div>
     <span class="sidebar__inform-subtitle">ежедневно и круглосуточно</span>
 
-    {{> ui/button
-      type="button"
-      button-class="sidebar__inform-button "
-      button-modifier="fill-color-red"
-      button-text=" Записаться на прием"
-    }}
+    <div class="" data-fancybox data-src="#appointment">
+      {{> ui/button
+        type="button"
+        button-class="sidebar__inform-button "
+        button-modifier="fill-color-red"
+        button-text=" Записаться на прием"
+      }}
+    </div>
   </div>
 </aside>
+{{> widgets/appointment-popup}}
