@@ -1,4 +1,3 @@
-import { getElement } from '@/js/composables/dom-manipulator.js'
 import { getServiceCards } from '@/js/partials/home/servise-list-request.js'
 import { renderServiceCards } from '@/js/partials/home/render-service-cards.js'
 

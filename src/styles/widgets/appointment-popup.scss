@@ -19,6 +19,15 @@
     max-width: 320px;
   }
 
+  .f-button {
+    top: 24px !important;
+    right: 24px !important;
+
+    svg {
+      stroke: $black !important;
+    }
+  }
+
   &__title {
     font-weight: 700;
     font-size: 48px;
@@ -212,7 +221,7 @@
 }
 
 .air-datepicker-global-container {
-  z-index: 10002 !important; /* Или выше, в зависимости от z-index Fancybox */
+  z-index: 10002 !important;
 }
 
 .air-datepicker--navigation {
@@ -242,13 +251,4 @@
 .air-datepicker-cell.-selected- {
   color: $green !important;
   background: transparent !important;
-}
-
-.f-button {
-  top: 24px !important;
-  right: 24px !important;
-
-  svg {
-    stroke: $black !important;
-  }
 }

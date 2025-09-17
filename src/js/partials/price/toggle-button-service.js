@@ -1,4 +1,4 @@
-import { getElement, getElements, renderElement } from '@/js/composables/dom-manipulator.js'
+import { getElement, getElements } from '@/js/composables/dom-manipulator.js'
 import { createPriceList } from '@/js/partials/price/render-price-list.js'
 import { priceRequest } from '@/js/partials/price/price-request.js'
 import { setActivePriceButtons } from '@/js/partials/price/set-active-price-buttons.js'

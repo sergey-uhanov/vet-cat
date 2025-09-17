@@ -65,7 +65,6 @@ export function appointmentValidation() {
         errorMessage: 'Необходимо согласие',
       },
     ])
-    // Успешная отправка
     .onSuccess(event => {
       console.log('success')
       getElement('.appointment-form').reset()

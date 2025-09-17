@@ -17,7 +17,6 @@ export function showMobileSearch() {
     searchInput.value = ''
     classManipulator(backdrop, 'add', 'dark-background_hidden')
     classManipulator(searchInputContainer, 'remove', 'header__search_open')
-
     enablePageScroll()
   }
 

@@ -49,11 +49,9 @@ export function createToast(message, { duration = 5000 } = {}) {
       }
     )
   } else {
-    // fallback: сразу ставим конечную позицию без анимации
     toast.style.transform = `translate(${dx}px, ${dy}px)`
   }
 
-  // Прогресс-бар: scaleX от 1 до 0
   const prog = toast.querySelector('.toast__progress > i')
   let progAnim
   if (prog && prog.animate) {

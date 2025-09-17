@@ -4,7 +4,6 @@ import '@/styles/modules/swiper.css'
 export function quadrupleSlider(target, next, prev, space = 40) {
   new Swiper(`.${target}`, {
     slidesPerView: 4,
-    // spaceBetween: 40,
     loop: true,
     navigation: {
       nextEl: `.${next}`,

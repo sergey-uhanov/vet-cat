@@ -1,4 +1,4 @@
-import { collection, getDocs, query, orderBy, startAt, endAt } from 'firebase/firestore'
+import { collection, getDocs, query } from 'firebase/firestore'
 import { db } from '#/firebase.js'
 
 export async function searchByTitle(searchText) {

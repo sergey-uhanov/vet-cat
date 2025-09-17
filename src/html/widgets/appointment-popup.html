@@ -21,8 +21,10 @@
       <div class="appointment-form__slide-button-wrapper">
         <div class="appointment-form__button-group">
           <div class="appointment-form__container">
-            <button class="appointment-form__button appointment-form__button_active" type="button">Строгино</button>
-            <button class="appointment-form__button" type="button">Донской</button>
+            <div class="appointment-form__button appointment-form__button_active" type="button">Строгино</div>
+
+            <div class="appointment-form__button" type="button">Донской</div>
+
             <div class="appointment-form__slider"></div>
           </div>
         </div>
@@ -33,6 +35,7 @@
       <label for="feedback-name"> Дата приема </label>
 
       {{> ui/input class="appointment-form__text-input" name='date' id='appointment-date'}}
+
       {{> base/svg-manager svg-manager-id="date" svg-manager-class="appointment-form__icon"}}
     </div>
 
@@ -48,14 +51,17 @@
       <span> Сообщение </span>(необязательно) <br />
       Можете описать проблему вашего питомца или указать специалиста, к которому хотите попасть на прием
     </label>
+
     <textarea class="appointment-form__text-area" name="user-message" id="appointment-message"></textarea>
 
     <div class="appointment-form__bottom-block">
       <label class="custom-checkbox">
         <input type="checkbox" class="custom-checkbox__input" name="agree" />
+
         <span class="custom-checkbox__box"></span>
         <span class="custom-checkbox__label">Я согласен с<span> условиями обработки персональных данных</span> </span>
       </label>
+
       <div class="appointment-form__button-wrapper">
         {{> ui/button button-class="appointment-form__button" type="submit" button-modifier="fill-color-green"
           button-text="Отправить"

@@ -1,4 +1,3 @@
-import { renderSmallImgCard } from '@/js/ui/render-small-img-card.js'
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '#/firebase.js'
 

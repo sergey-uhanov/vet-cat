@@ -15,7 +15,6 @@
   }
 
   &__item {
-    //max-width: 536px;
     background: $logo-bg;
     padding: 35px 56px;
     border-radius: 8px;
@@ -42,6 +41,7 @@
     font-size: 17px;
     line-height: 1.17;
     margin-bottom: 16px;
+
     @include media-breakpoint-down-equal(md) {
       font-size: 14px;
     }

@@ -97,15 +97,15 @@
 }
 
 .fixed-gallery-caption {
-  position: fixed; /* Фиксирует относительно окна */
-  top: 20px; /* Отступ от верха экрана */
-  left: 50%; /* По центру по горизонтали */
+  position: fixed;
+  top: 20px;
+  left: 50%;
   transform: translateX(-50%);
 
   color: #fff;
   text-align: center;
   font-size: 1rem;
-  z-index: 1000000000000; /* Поверх всех элементов */
+  z-index: 10000;
   pointer-events: none;
   white-space: nowrap;
 
